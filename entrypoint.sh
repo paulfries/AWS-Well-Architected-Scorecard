@@ -1,5 +1,4 @@
 #!/bin/sh
-
 export SECRET_KEY_BASE=`rake secret`
 rake db:create db:migrate db:seed
 

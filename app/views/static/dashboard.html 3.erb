@@ -1,0 +1,119 @@
+<% capability_label = get_capability_labels %>
+<% scores_array = @summary.get_capability_array %>
+<% score_description = @summary.score_description_array(0) %>
+<% next_score_description = @summary.score_description_array(1) %>
+
+<div class="stats">
+	<%= link_to "javascript:void(0)", :onclick=>"openSlider('slider-data')" do%>
+	<div class="col-xs-6 col-md-4 stats-item">
+		<div class="stats-title text-center">
+			<p> Native Cloud Readiness Score</p>
+		</div>
+		<div class="stats-val text-center">
+			<p><%= @summary[:total].nil? ? 0 : @summary[:total].round(2) %>%	</p>
+		</div>
+	</div>
+	<%end%>
+	<%= link_to products_path do%>
+	<div class="col-xs-6 col-md-4 stats-item">
+		<div class="stats-title text-center">
+			<p> Total Number of Assets </p>
+		</div>
+		<div class="stats-val text-center">
+			<p><%= @products_count %></p>
+		</div>
+	</div>
+	<% end %>
+	<% if CONFIGS[:enable_asset_creation] %>
+		<%= link_to new_product_path do%>
+		<div class="col-xs-6 col-md-4 stats-item">
+			<div class="stats-title text-center">
+				<p> Add a new Asset </p>
+			</div>
+			<div class="stats-val text-center">
+				<p>+</p>
+			</div>
+		</div>
+		<% end %>
+	<% else %>
+		<div class="col-xs-6 col-md-4 stats-item">
+			<div class="stats-title text-center">
+				<p>Adding asset feature has been disabled.</p>
+				<% unless notice.nil? %>
+					<div class="alert alert-<%=notice["type"]%> alert-dismissable">
+						<a href="/" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+						<p id="notice"><%= notice["message"] %></p>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	<% end %>
+</div>
+
+
+<div class="page__content">
+	<canvas id="category-average-graph" width="400" height="100"></canvas>
+</div>
+
+<div class="slider-data">
+	<div class="title"> <h1> Organization wide Score Descriptions </h1> </div>
+	<div class="content">
+		<table class="table table-hover table-bordered">
+			<thead>
+				<tr>
+					<th bgcolor="#D0006F" style="color: #FFF"> Title </th>
+					<th bgcolor="#D0006F" style="color: #FFF"> Score </th>
+					<th bgcolor="#D0006F" style="color: #FFF"> Current Score Description </th>
+				</tr>
+			</thead>
+			<% scores_array.each_with_index do |score, index| %>
+				<tr>
+					<td><%= capability_label[index] %></td>
+					<td><%= score %></td>
+					<td><%= score_description[index] %></td>
+				</tr>
+			<% end %>
+		</table>
+	</div>
+</div>
+
+<script>
+	var ctx = document.getElementById("category-average-graph");
+	var categoryAverage = new Chart(ctx, {
+		type: 'bar',
+		data: {
+			labels: <%= raw get_capability_labels %>,
+
+			datasets: [{
+				type: 'line',
+				label: 'Category',
+				data: <%= @summary.get_expanded_category_array %>,
+				borderColor: '#000000',
+				borderWidth: 1,
+				lineTension: 0,
+				pointRadius: 0,
+				options: {
+					hover: {
+						mode: 'point',
+						interact: true
+					}
+				}
+			},{
+				type: 'bar',
+				label: 'Capabilities',
+				data: <%= @summary.get_capability_array %>,
+				backgroundColor: ['#DFF3FB', '#DFF3FB', '#DFF3FB', '#DFF3FB', '#DFF3FB', '#DFF3FB', '#DFF3FB', '#DFF3FB', '#DFF3FB', '#DFF3FB', '#DFF3FB', '#DFF3FB', '#BFE6F7', '#BFE6F7', '#BFE6F7', '#BFE6F7', '#BFE6F7', '#BFE6F7', '#BFE6F7', '#BFE6F7', '#80CEEF', '#80CEEF', '#80CEEF', '#80CEEF', '#80CEEF', '#80CEEF', '#80CEEF', '#80CEEF', '#80CEEF', '#80CEEF', '#0097D3', '#0097D3', '#0097D3', '#0097D3', '#0097D3', '#0097D3', '#0097D3', '#0097D3', '#0075A7', '#0075A7', '#0075A7', '#0075A7'],
+				borderColor: '#000000',
+				borderWidth: 1
+			}]
+		},
+		options: {
+			layout: { padding: { bottom: 30 } },
+			responsive: true,
+			scales: {
+				xAxes: [{ ticks : { display: true, autoSkip: false, max: 5, minRotation: 90 } }],
+				yAxes: [{ ticks:{ min: 0, beginAtZero: true, max: 4, stepSize:1 } }]
+			}
+		}
+	});
+</script>
