@@ -54,7 +54,7 @@ img.title-icon{
 }
 
 .page__content.subheader{
-	background-color:#dde1e4;
+	background-color:#F8CCCB;
 	padding: 10px 70px 10px 60px;
 	width: 100%;
 	height: 60px;
@@ -103,7 +103,7 @@ footer{
 .footer-tm-logo {
 	height: 19px;
 	width: 112px;
-	float: left;
+	float: right;
 	padding: 4px 0 0 0;
 	margin: 0 0 0 1px;
 }
