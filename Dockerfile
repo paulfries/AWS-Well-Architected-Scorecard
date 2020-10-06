@@ -1,4 +1,4 @@
-FROM ruby:2.6-alpine
+FROM ruby:2.5-alpine
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
@@ -38,4 +38,4 @@ RUN chmod 777 entrypoint.sh
 ENV RAILS_ENV production
 
 EXPOSE 3000
-ENTRYPOINT ["/techmaturity/entrypoint.sh"]
+ENTRYPOINT ["dumb-init", "/techmaturity/entrypoint.sh"]
