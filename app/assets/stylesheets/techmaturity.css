@@ -11,7 +11,7 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 1;
-    background-color: #f0f0f0;
+    background-color: #e10;
     border-bottom: 5px Solid #e10;
 }
 
@@ -103,9 +103,9 @@ footer{
 .footer-tm-logo {
 	height: 19px;
 	width: 112px;
-	float: right;
+	float: left;
 	padding: 4px 0 0 0;
-	margin: 0 0 0 7px;
+	margin: 0 0 0 1px;
 }
 
 /* First Time */
