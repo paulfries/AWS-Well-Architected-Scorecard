@@ -27,6 +27,7 @@ RUN apk add --no-cache openssl ttf-dejavu && \
 COPY Gemfile* /tmp/
 WORKDIR /tmp
 
+RUN gem install bundler -v 2.0.1
 RUN bundle install
 
 RUN mkdir /techmaturity
