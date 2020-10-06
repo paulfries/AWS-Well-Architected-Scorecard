@@ -31,11 +31,11 @@ RUN bundle install
 
 RUN mkdir /techmaturity
 COPY . /techmaturity
+COPY entrypoint.sh /techmaturity/entrypoint.sh
 WORKDIR /techmaturity
 
 RUN chmod 777 entrypoint.sh
 ENV RAILS_ENV production
 
 EXPOSE 3000
-
-CMD ["dumb-init", "/techmaturity/entrypoint.sh"]
+ENTRYPOINT ["/techmaturity/entrypoint.sh"]
