@@ -23,7 +23,7 @@ objects:
         name: docker.io/ticketmaster/techmaturity:${APP_VERSION}
       importPolicy: {}
       annotations:
-        description: Tech maturity by Ticketmaster
+        description: Tech maturity for Takeda 
         tags: ticketmaster,techmaturity
         version: "${APP_VERSION}"
 - apiVersion: v1
