@@ -273,12 +273,12 @@ footer{
 
 .stats-title{
 	font-size: 30px;
-	color: #FFFFFF;
+	color: #686868;
 }
 
 .stats-val{
 	font-size: 100px;
-	color: #FFFFFF;
+	color: #686868;
 }
 
 a .stats-item:hover .stats-val{
