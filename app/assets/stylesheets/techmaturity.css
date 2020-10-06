@@ -12,7 +12,7 @@ header{
     padding-bottom: 10px;
     line-height: 1;
     background-color: #009cde;
-    border-bottom: 5px Solid #FA3;
+    border-bottom: 5px Solid #e10;
 }
 
 .title a{
@@ -84,7 +84,7 @@ footer{
     background-color: #009cde;
     position: fixed;
     bottom: 0;
-    border-top: 5px Solid #FA3;
+    border-top: 5px Solid #e10;
 }
 
 .footer{
