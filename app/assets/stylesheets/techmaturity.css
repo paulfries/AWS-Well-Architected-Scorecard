@@ -267,7 +267,7 @@ footer{
 .stats-item{
 	height: 230px;
 	background-color: #F8CCCB;
-	border-bottom: 5px Solid #DDE1E4;
+	border-bottom: 5px Solid #E10;
 	padding: 20px 0 0 0;
 }
 
@@ -278,7 +278,7 @@ footer{
 
 .stats-val{
 	font-size: 100px;
-	color: #DDE1E4;
+	color: #FFFFFF;
 }
 
 a .stats-item:hover .stats-val{
