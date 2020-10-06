@@ -20,6 +20,7 @@ phases:
     # Update Bundle
     - gem install bundler
     - bundler update --bundler
+    - bundle update minitest-capybara
     - bundle update
     - bundle check
     - echo Build started on `date` 
