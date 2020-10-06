@@ -11,7 +11,7 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 1;
-    background-color: #009cde;
+    background-color: #f0f0f0;
     border-bottom: 5px Solid #e10;
 }
 
@@ -81,7 +81,7 @@ footer{
     width: 100%;
     padding: 10px 15px 10px 15px;
     line-height: 1;
-    background-color: #009cde;
+    background-color: #f0f0f0;
     position: fixed;
     bottom: 0;
     border-top: 5px Solid #e10;
