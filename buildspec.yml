@@ -19,7 +19,7 @@ phases:
     commands: 
     # Update Bundle
     - gem install bundler
-    - bundle update --system
+    - bundler update --bundler
     - bundle update
     - bundle check
     - echo Build started on `date` 
