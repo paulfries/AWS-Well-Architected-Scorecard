@@ -20,8 +20,7 @@ phases:
     # Update Bundle
     - gem install bundler
     - bundler update --bundler
-    - bundle update minitest-capybara
-    - bundle update
+    - bundle install 
     - bundle check
     - echo Build started on `date` 
     - echo Building the Docker image... 
