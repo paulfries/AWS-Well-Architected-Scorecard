@@ -1,11 +1,11 @@
-a: "Code and Infrastructure"
+a: "Operational Excellence"
 
-a1: 'Code Commenting Strategy' 
-a1_1: 'No or inconsistent code comments that do not tend to follow any defined standards, comments cannot be used to generate documentation' 
-a1_2: 'All new code is self-documenting and comments are suitable for documentation generation tools ' 
-a1_3: 'Most code is self-documenting and existing comments are suitable for documentation generation tools ' 
-a1_4: 'All code is self-documenting and comments are consistently suitable for documentation generation tools' 
-a1_min: ~
+a1: 'Perform Operations as Code' 
+a1_1: 'No operations are performed as code (all manual tasks)' 
+a1_2: 'Some operations are performed as code, while some manual operations are manual ' 
+a1_3: 'Most operations are performed as code, few manual operations are required ' 
+a1_4: 'All operations are performed using code (CloudFormation, Elastic Beanstalk, Ansible, etc)' 
+a1_min: 2
 
 a2: 'Code Management Strategy' 
 a2_1: 'Code is in SCM (e.g. git) and used for release, but there is little to no documented or agreed strategy of how to branch, merge, or release code' 
@@ -23,7 +23,7 @@ a3_min: 3
 
 a4: 'Logging and Telemetry' 
 a4_1: 'Default or customized logging and no telemetry' 
-a4_2: 'Rudimentary logging and telemetry in place' 
+a4_2: 'Rudimentary logging and telemetry in place. A minimum set of data is collected to understand the applicaiton state' 
 a4_3: "Adherence to established logging and telemetry standards Suitable information available in logs and telemetry for troubleshooting common issues" 
 a4_4: "Adherence to established logging and telemetry standards Most issues can be diagnosed through logs and telemetry" 
 a4_min: 2
@@ -58,23 +58,23 @@ a8_min: ~
 
 a9: 'Build for Availability' 
 a9_1: 'Product is not tested for extreme failures (e.g. a node/instance becoming unavailable)' 
-a9_2: 'Product is manually tested for extreme failures and automatically tested for error use cases' 
+a9_2: 'Product is manually tested for extreme failures and automatically tested for error use cases. Single points of failure are documented' 
 a9_3: 'Automated resilience testing framework (e.g. Chaos Monkey) runs rampant on the product in a staging environment without failures' 
 a9_4: 'Automated resilience testing framework (e.g. Chaos Monkey) runs rampant on the product in a staging and production environment without failures and all errors (e.g. code, web server, OS, etc...) are caught and escalated' 
 a9_min: 2
 
-a10: 'Incremental Coding (Prototyping)' 
+a10: 'Incremental Updates' 
 a10_1: 'Contributors do not use prototyping to estimate or validate any features' 
 a10_2: 'Contributors sometimes use prototyping to estimate larger features more confidently' 
 a10_3: 'Contributors often use prototyping to validate features with users before completion' 
 a10_4: 'Contributors always use prototyping to validate features with users before completion' 
 a10_min: ~
 
-a11: 'Feedback and Requirements' 
-a11_1: 'Contributors start coding before requirements are fully understood' 
-a11_2: 'Contributors code from wireframes / design comps and understand the requirements and business value before building the feature' 
-a11_3: 'Contributors code from wireframes / design comps, and understand how the feature interacts within the ecosystem before building the feature' 
-a11_4: 'Contributors code from clickable wireframes / design comps that were validated by users and understand how the feature interacts within the ecosystem before building the feature' 
+a11: 'Operational Readiness' 
+a11_1: 'The Application is approprately managed on-premesis, but no feasible plan exists for managing it once migrated to the cloud' 
+a11_2: 'Application owners understand the need for a cloud operating model to support the application, but have some degree of skill or resource gap. A plan is in place to address the concern' 
+a11_3: 'The application owner has developed a workable clod operating model for the application and has most of the resources necessary to support it' 
+a11_4: 'The applicaiton owner has developed a workable cloud operating model for the applicaiton and has all of the resources necessary to support it' 
 a11_min: ~
 
 a12: 'Behavior Driven Development (BDD)' 
@@ -91,21 +91,21 @@ a13_3: 'The solution architecture replaces some aspects of the infrastrucure wit
 a13_4: 'Solution architecture is serverless and makes use of contempoary managed services throughout' 
 a13_min: 2
 
-b: "Build and Test"
+b: "Security"
 
-b1: 'Definition of Done Completeness' 
-b1_1: 'Contributors do not follow any documented or agreed upon definition of "done" ' 
-b1_2: 'Contributors mostly follow a defined definition of "done"' 
-b1_3: 'Contributors always follow definition of "done" as a gate to making a release' 
-b1_4: 'Contributors actively update definition of "done" to improve quality and prevent issues from reoccurring' 
-b1_min: ~
+b1: 'Implement a Strong Identity foundation' 
+b1_1: 'Application and/or supporting infrastrucure lacks appropriate identity or access control mechanisms ' 
+b1_2: 'Applicaiton and/or supporting infrastrucure manages identity independantly of organizational standards' 
+b1_3: 'Application and supporting infrastructure use an approved identity and access management standard' 
+b1_4: 'Application and supporting infrastructure use an approved identity and access management standard, strong separation of duties is defined and maintained' 
+b1_min: 3
 
-b2: 'Code Quality' 
-b2_1: 'Code coverage is unknown or out of date' 
-b2_2: 'Code coverage is actively tracked' 
-b2_3: '80%+ code coverage is maintained' 
-b2_4: '90%+ code coverage is maintained or less than 20% of build rejections by regression test coverage' 
-b2_min: ~
+b2: 'Protect data in transit and at rest' 
+b2_1: 'No data encryption is used' 
+b2_2: 'Data in transit is encrypted' 
+b2_3: 'Both data in transit and at rest is encrypted' 
+b2_4: 'Both data in transit and at rest is encrypted and encryption keys are centrally managed by the organization' 
+b2_min: 3
 
 b3: 'Security Analysis' 
 b3_1: 'Code/application has never been scanned with a web application security scanner ' 
@@ -114,11 +114,11 @@ b3_3: 'Code/application is automatically scanned with an approved security suite
 b3_4: 'Code/application is automatically scanned with an approved security suite and defects are prioritized into active workload using the proper incident management process' 
 b3_min: 2
 
-b4: 'Automated Testing' 
-b4_1: 'No defined acceptance tests' 
-b4_2: 'Some existing acceptance tests, but little to no automation' 
-b4_3: 'Most existing tests are automated, but all new acceptance tests are fully automated' 
-b4_4: 'Acceptance tests are actively built and maintained with full automation for every build' 
+b4: 'Automated Security Compliance' 
+b4_1: 'Security compliance is manually defined and audited' 
+b4_2: 'Some security compliance standards are automated' 
+b4_3: 'Most security compliance standards are automated and anomalies are reported to the security team through a defined process' 
+b4_4: 'All secirty compliance standards are automated and anomalies are reported to the security team through a defined process' 
 b4_min: 2
 
 b5: 'Continuous Integration' 
@@ -128,11 +128,11 @@ b5_3: 'Build pipeline requires automated tests to pass before feature is conside
 b5_4: 'Build pipeline requires automated tests to pass and failures are actively monitored and a process for handling failures is in place' 
 b5_min: 3
 
-b6: 'Performance Testing and Capacity Planning' 
-b6_1: 'The operational capacity of the production software is not clearly understood' 
-b6_2: "Performance is manually tested during the release process using load scripts of common scenarios Contributors understand the algorithmic complexity of the software" 
-b6_3: "Performance is automatically tracked in a staging environment to gauge changes in application performance Contributors understand the optimal load that each instance can handle, and there is a process in place to make release decisions based on acceptance of new SLAs Capacity provisioning and scaling up and down requires manual steps" 
-b6_4: "Performance is automatically tracked in both staging and production with a full understanding of the application performance characteristics.  Contributors actively collaborate with the business to determine acceptance of new SLAs based on actual production traffic and predications created by load testing. Capacity provisioning and scaling up and down is fully automated" 
+b6: 'Deployment Strategy' 
+b6_1: 'Contributors do not follow a documented or consistent deployment strategy' 
+b6_2: 'Contributors follow a defined deployment strategy' 
+b6_3: 'Contributors follow a defined deployment strategy that includes automated rollbacks, regression tests, configs, and tracking' 
+b6_4: 'Contributors follow a defined deployment strategy that is fully automated and includes regression tests, configs, tracking, and database releases' 
 b6_min: 2
 
 b7: 'Configuration File Management' 
@@ -142,20 +142,21 @@ b7_3: 'Sensitive data has been abstracted, and configurations are human readable
 b7_4: "Sensitive data has been abstracted, and configurations are human readable All configurations are automated with tools that support monitoring and alerting with minimal environment-specific data" 
 b7_min: 3
 
-b8: 'Service Consumer Tests' 
-b8_1: 'No or some tests simulating a consuming application or service' 
-b8_2: 'Manual tests are executed to simulate a consuming application or service' 
-b8_3: 'Automated tests of main use cases from a consuming application or service are integrated into the build pipeline' 
-b8_4: 'Automated tests from a consuming application or service are triggered by the build pipeline, and cause the build to fail if there are errors' 
-b8_min: 2
+b8: 'Build Pipeline Traceability' 
+b8_1: 'Code can be built correctly - manually or via a build pipeline' 
+b8_2: 'There is a build pipeline with a visual representation and contributors are automatically alerted when a build fails' 
+b8_3: 'Build is triggered by source control check-in or is scheduled, with alerts being sent out on failures' 
+b8_4: 'Build is triggered by source control check-in or a build of its dependent services, with alerts being sent out on failures, and if successful the build is pushed across environments to production' 
+b8_min: 1
 
-c: "Release"
 
-c1: 'Deployment Strategy' 
-c1_1: 'Contributors do not follow a documented or consistent deployment strategy' 
-c1_2: 'Contributors follow a defined deployment strategy' 
-c1_3: 'Contributors follow a defined deployment strategy that includes automated rollbacks, regression tests, configs, and tracking' 
-c1_4: 'Contributors follow a defined deployment strategy that is fully automated and includes regression tests, configs, tracking, and database releases' 
+c: "Reliability"
+
+c1: 'Performance Testing and Capacity Planning' 
+c1_1: 'The operational capacity of the production software is not clearly understood' 
+c1_2: "Performance is manually tested during the release process using load scripts of common scenarios Contributors understand the algorithmic complexity of the software" 
+c1_3: "Performance is automatically tracked in a staging environment to gauge changes in application performance Contributors understand the optimal load that each instance can handle, and there is a process in place to make release decisions based on acceptance of new SLAs Capacity provisioning and scaling up and down requires manual steps" 
+c1_4: "Performance is automatically tracked in both staging and production with a full understanding of the application performance characteristics.  Contributors actively collaborate with the business to determine acceptance of new SLAs based on actual production traffic and predications created by load testing. Capacity provisioning and scaling up and down is fully automated" 
 c1_min: 2
 
 c2: 'Release Frequency' 
@@ -165,19 +166,19 @@ c2_3: 'Multiple releases every cycle (sprint / iteration)'
 c2_4: 'Code is released to production on every successful build' 
 c2_min: ~
 
-c3: 'Feature Flags' 
-c3_1: 'No feature flagging' 
-c3_2: 'Some feature flagging' 
-c3_3: 'Feature flags adhere to an established standard, allow for run-time based configuration, and are consistently maintained as the product evolves' 
-c3_4: 'Feature flags adhere to an established standard, allow for run-time based configuration, are consistently maintained as the product evolves, and different categories of feature-flags are controlled by different stakeholders' 
-c3_min: ~
+c3: 'Application Scalability' 
+c3_1: 'No consideration has been made for application performance scaling' 
+c3_2: 'Application can be manually scaled vertically' 
+c3_3: 'Some components of the application can be scaled horizontally' 
+c3_4: 'Application can scale up and down automatically based on demand' 
+c3_min: 2
 
-c4: 'Build Pipeline Traceability' 
-c4_1: 'Code can be built correctly - manually or via a build pipeline' 
-c4_2: 'There is a build pipeline with a visual representation and contributors are automatically alerted when a build fails' 
-c4_3: 'Build is triggered by source control check-in or is scheduled, with alerts being sent out on failures' 
-c4_4: 'Build is triggered by source control check-in or a build of its dependent services, with alerts being sent out on failures, and if successful the build is pushed across environments to production' 
-c4_min: 1
+b8: 'Service Consumer Tests' 
+b8_1: 'No or some tests simulating a consuming application or service' 
+b8_2: 'Manual tests are executed to simulate a consuming application or service' 
+b8_3: 'Automated tests of main use cases from a consuming application or service are integrated into the build pipeline' 
+b8_4: 'Automated tests from a consuming application or service are triggered by the build pipeline, and cause the build to fail if there are errors' 
+b8_min: 2
 
 c5: 'Modular Releases' 
 c5_1: 'Entire product is a single deployable unit' 
@@ -221,7 +222,7 @@ c10_3: 'DB schema changes and migrations are made directly from version control 
 c10_4: 'DB schema changes and migrations are made directly from version control and consistent across all environments, including production' 
 c10_min: ~
 
-d: "Operate"
+d: "Performance Efficiency"
 
 d1: 'DevOps Practice' 
 d1_1: 'Environments in production are not controlled by contributors building the product' 
@@ -244,12 +245,12 @@ d3_3: "SLAs in staging and production are consistently being met and alerted on 
 d3_4: "SLAs in staging and production are consistently being met, and a business disruption alert is escalated via a defined incident management process when thresholds are not met or a healthcheck fails Non-standard HTTP responses trigger an alert Alerts are triggered for main use cases when expected results are not met (i.e. lower than normal conversion rate)" 
 d3_min: 2
 
-d4: 'On-Call Strategy' 
-d4_1: 'Others know how to escalate to the team' 
-d4_2: 'Contributors follow a defined on-call strategy' 
-d4_3: 'On-call strategy is efficient as evidenced by consistently low MTTD and MTTR but sometimes requires more than one party to resolve' 
-d4_4: 'Contributor who is on-call is usually the resolver for all issues within their product as evidenced by a consistently low MTTD and MTTR' 
-d4_min: 2
+d4: 'Democratize advanced technologies' 
+d4_1: 'The team pays little attention to improvements in techology domains that may affect this architecture' 
+d4_2: 'Advanced, new, or contempoary soluctions are identified, but difficult for the team to implement' 
+d4_3: 'The team tests new technologies as they become available, but they are rarely implemented due to internal policy or process constraints' 
+d4_4: 'New technologies are regularly identified, tested, and implemented such that they improve application performance' 
+d4_min: 1
 
 d5: 'Risk Management' 
 d5_1: 'Contributors do not fully own risk management or mitigation of the product. Disaster recovery is normally defined and/or managed by someone else who has full ownership' 
@@ -279,7 +280,7 @@ d8_3: "Business metrics are tracked in a dashboard that illustrates product perf
 d8_4: "Business metrics are tracked in a dashboard that illustrates product performance, is constantly referenced by others to quantify how the product performs, and used to measure the success of new feature rollouts Main use cases trigger alerts to stakeholders when business metrics do not match expected values (e.g. lower than expected conversion rates)" 
 d8_min: ~
 
-e: "Optimize"
+e: "Cost Optimization"
 
 e1: 'Continuous Process Improvement' 
 e1_1: 'Few processes are defined and contributors rely on tribal knowledge to succeed' 
@@ -295,11 +296,11 @@ e2_3: 'Contributors avoid taking on any new debt by actively tracking and managi
 e2_4: 'Contributors actively prioritize and reduce all debt' 
 e2_min: ~
 
-e3: 'Root Cause Prevention' 
-e3_1: 'Production issues happen and sometimes it is known why, but it is mostly difficult to find the underlying cause' 
-e3_2: 'Contributors follow a defined process for determining the root cause of issues' 
-e3_3: 'Contributors follow a defined and accepted process for determining the root cause of issues, and major issues are prioritized and corrected' 
-e3_4: "Contributors follow a defined and accepted process for root cause analysis which includes consistently preventing future issues by:  1) putting the issue into the work queue  2) prioritizing and correcting the issue, and  3) adding monitoring or alerting to detect such issues" 
+e3: 'Cost-Effective Resources' 
+e3_1: 'The application runs in the cloud exactly as it might run on-premesis' 
+e3_2: 'Contributors sometimes identify some simple opportunites for cost improvement (e.g. Reserved Instances)' 
+e3_3: 'Contributors sometimes identify some advanced opportunities for cost improvment (e.g. Spot Instances, auto-scalaing, managed services)' 
+e3_4: 'Contributors follow a defined and accepted process for Identifying cost improvment oppotunities. The application is regularly adjusted to make use of these opportunities' 
 e3_min: 2
 
 e4: 'Data-Driven Metrics' 
