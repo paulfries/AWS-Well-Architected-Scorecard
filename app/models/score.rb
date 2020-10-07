@@ -4,7 +4,7 @@ class Score < ApplicationRecord
   
 	scope :summary, -> { joins(:product).where(latest: true).select("avg(a1) as a1, avg(a2) as a2, avg(a3) as a3, 
 	avg(a4) as a4, avg(a5) as a5, avg(a6) as a6, avg(a7) as a7, avg(a8) as a8, 
-	avg(a9) as a9, avg(a10) as a10, avg(a11) as a11, avg(a12) as a12, avg(b1) as b1, 
+	avg(a9) as a9, avg(a10) as a10, avg(a11) as a11, avg(a12) as a12, avg(a13) as a13, avg(b1) as b1, 
 	avg(b2) as b2, avg(b3) as b3, avg(b4) as b4, avg(b5) as b5, avg(b6) as b6, 
 	avg(b7) as b7, avg(b8) as b8, avg(c1) as c1, avg(c2) as c2, avg(c3) as c3, 
 	avg(c4) as c4, avg(c5) as c5, avg(c6) as c6, avg(c7) as c7, avg(c8) as c8, 
@@ -18,7 +18,7 @@ class Score < ApplicationRecord
 	end
   
 	def get_capability_array
-	  [self.a1.to_i,self.a2.to_i,self.a3.to_i,self.a4.to_i,self.a5.to_i,self.a6.to_i,self.a7.to_i,self.a8.to_i,self.a9.to_i,self.a10.to_i,self.a11.to_i,self.a12.to_i,
+	  [self.a1.to_i,self.a2.to_i,self.a3.to_i,self.a4.to_i,self.a5.to_i,self.a6.to_i,self.a7.to_i,self.a8.to_i,self.a9.to_i,self.a10.to_i,self.a11.to_i,self.a12.to_i,self.a13.to_i,
 		self.b1.to_i,self.b2.to_i,self.b3.to_i,self.b4.to_i,self.b5.to_i,self.b6.to_i,self.b7.to_i,self.b8.to_i,
 		self.c1.to_i,self.c2.to_i,self.c3.to_i,self.c4.to_i,self.c5.to_i,self.c6.to_i,self.c7.to_i,self.c8.to_i,self.c9.to_i,self.c10.to_i,
 		self.d1.to_i,self.d2.to_i,self.d3.to_i,self.d4.to_i,self.d5.to_i,self.d6.to_i,self.d7.to_i,self.d8.to_i,
@@ -37,7 +37,7 @@ class Score < ApplicationRecord
 	  [get_description_string("a1", self.a1.to_i,increment), get_description_string("a2", self.a2.to_i,increment), get_description_string("a3", self.a3.to_i,increment), 
 	  get_description_string("a4", self.a4.to_i,increment), get_description_string("a5", self.a5.to_i,increment), get_description_string("a6", self.a6.to_i,increment), 
 	  get_description_string("a7", self.a7.to_i,increment), get_description_string("a8", self.a8.to_i,increment), get_description_string("a9", self.a9.to_i,increment), 
-	  get_description_string("a10", self.a10.to_i,increment), get_description_string("a11", self.a11.to_i,increment), get_description_string("a12", self.a12.to_i,increment), 
+	  get_description_string("a10", self.a10.to_i,increment), get_description_string("a11", self.a11.to_i,increment), get_description_string("a12", self.a12.to_i,increment), get_description_string("a13", self.a13.to_i,increment),
 	  get_description_string("b1", self.b1.to_i,increment), get_description_string("b2", self.b2.to_i,increment), get_description_string("b3", self.b3.to_i,increment), 
 	  get_description_string("b4", self.b4.to_i,increment), get_description_string("b5", self.b5.to_i,increment), get_description_string("b6", self.b6.to_i,increment), 
 	  get_description_string("b7", self.b7.to_i,increment), get_description_string("b8", self.b8.to_i,increment), get_description_string("c1", self.c1.to_i,increment), 
@@ -58,7 +58,7 @@ class Score < ApplicationRecord
 	end
 	
 	def compute_totals
-	  self.a = compute_segment(['a1','a2','a3','a4','a5','a6','a7','a8','a9','a10','a11','a12'])
+	  self.a = compute_segment(['a1','a2','a3','a4','a5','a6','a7','a8','a9','a10','a11','a12','a13'])
 	  self.b = compute_segment(['b1','b2','b3','b4','b5','b6','b7','b8'])
 	  self.c = compute_segment(['c1','c2','c3','c4','c5','c6','c7','c8','c9','c10'])
 	  self.d = compute_segment(['d1','d2','d3','d4','d5','d6','d7','d8'])

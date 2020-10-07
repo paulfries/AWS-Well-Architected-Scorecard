@@ -84,6 +84,13 @@ a12_3: 'Contributors understand BDD methodology, and practice it on <b>most</b> 
 a12_4: 'BDD methodology is <b>how things get done</b>' 
 a12_min: ~
 
+a13: 'Infrasructure Baseline' 
+a13_1: 'Infrastrucutre makes use of <b>non-standard</b> components (OS, Databse, or other) - <b>Exception Requred</b>' 
+a13_2: 'Standard (<b>approved</b>) compnents are used in the solution architecture' 
+a13_3: 'The solution architecture replaces <b>some</b> aspects of the infrastrucure with managed cloud solutions' 
+a13_4: 'Solution architecture is <b>serverless</b> and makes use of contempoary managed services throughout' 
+a13_min: 2
+
 b: "Build and Test"
 
 b1: 'Definition of Done Completeness' 
