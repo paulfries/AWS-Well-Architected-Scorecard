@@ -107,11 +107,11 @@ b2_3: '80%+ code coverage is maintained'
 b2_4: '90%+ code coverage is maintained or less than 20% of build rejections by regression test coverage' 
 b2_min: ~
 
-b3: 'Security Code Analysis' 
-b3_1: 'Code has never been scanned with a web application security scanner ' 
-b3_2: 'Code has been previously scanned with a security scanner ' 
-b3_3: 'Code is regularly scanned with a security scanner' 
-b3_4: 'Code is automatically scanned with a security scanner and defects are prioritized into active workload' 
+b3: 'Security Analysis' 
+b3_1: 'Code/application has never been scanned with a web application security scanner ' 
+b3_2: 'Code/applicaiton has an approved security suite deployed and is regularly scanned for anomalies ' 
+b3_3: 'Code/application is automatically scanned with an approved security suite, anomalies are reported' 
+b3_4: 'Code/application is automatically scanned with an approved security suite and defects are prioritized into active workload using the proper incident management process' 
 b3_min: 2
 
 b4: 'Automated Testing' 
