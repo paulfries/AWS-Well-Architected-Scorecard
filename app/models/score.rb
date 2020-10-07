@@ -30,7 +30,7 @@ class Score < ApplicationRecord
 	end
   
 	def get_expanded_category_array
-	  [[self.a.to_i]*12, [self.b.to_i]*8, [self.c.to_i]*10, [self.d.to_i]*8, [self.e.to_i]*4].flatten
+	  [[self.a.to_i]*13, [self.b.to_i]*8, [self.c.to_i]*10, [self.d.to_i]*8, [self.e.to_i]*4].flatten
 	end
   
 	def score_description_array(increment)

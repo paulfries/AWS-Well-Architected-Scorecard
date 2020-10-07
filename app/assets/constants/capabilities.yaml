@@ -85,7 +85,7 @@ a12_4: 'BDD methodology is how things get done'
 a12_min: ~
 
 a13: 'Infrasructure Baseline' 
-a13_1: 'Infrastrucutre makes use of <b>non-standard</b> components (OS, Databse, or other) - Exception Requred' 
+a13_1: 'Infrastrucutre makes use of non-standard components (OS, Databse, or other) - Exception Requred' 
 a13_2: 'Standard (approved) compnents are used in the solution architecture' 
 a13_3: 'The solution architecture replaces some aspects of the infrastrucure with managed cloud solutions' 
 a13_4: 'Solution architecture is serverless and makes use of contempoary managed services throughout' 
