@@ -13,6 +13,7 @@ class CreateScores < ActiveRecord::Migration[5.0]
       t.integer :a10
       t.integer :a11
       t.integer :a12
+      t.integer :a13
       t.integer :b1
       t.integer :b2
       t.integer :b3
