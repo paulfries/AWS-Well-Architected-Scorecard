@@ -241,7 +241,7 @@ d: "Performance Efficiency"
 d1: 'DevOps Practice' 
 d1_1: 'Environments in production are not controlled by contributors building the product' 
 d1_2: 'Environments in <b>staging</b> are <b>controlled and partially managed</b> by the contributors building the product and receive issues escalations for that environment' 
-d1_3: 'Environments in <b>production</b> are <b>owned<.b> by the contributors building the product, but <b>controlled by someone else</b>' 
+d1_3: 'Environments in <b>production</b> are <b>owned</b> by the contributors building the product, but <b>controlled by someone else</b>' 
 d1_4: '<b>DevOps model is followed</b> - environments in production are fully controlled and owned by the contributors building the product, including alerts and issue escalations' 
 d1_min: ~
 
