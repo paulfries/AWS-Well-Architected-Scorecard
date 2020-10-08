@@ -142,7 +142,7 @@ b5_3: '<b>Application/Environment specific</b> security event logging is enabled
 b5_4: '<b>Application/Environment specific</b> security event logging is enabled throughout the application architecture. Logs are transmitted to a <b>central security log repository</b> for analyss. <b>Anomalies are automatically detected</b> and <b>trigger</b> an approprate incident management process' 
 b5_min: 3
 
-b6: 'Change / Deployment Strategy' 
+b6: 'Change Management Strategy' 
 b6_1: 'Contributors do not follow a documented or consistent deployment or change management strategy' 
 b6_2: 'Contributors follow a <b>defined</b> deployment and change management process' 
 b6_3: 'Contributors follow a defined deployment strategy that includes <b>automated</b> rollbacks, regression tests, configs, and tracking' 
@@ -160,7 +160,7 @@ b8: 'Network Security Controls'
 b8_1: '<b>Some</b> network port and protocol requirements are documented' 
 b8_2: 'Application data flow is <b>fully documented</b>. Some standard network security/access controls are in place' 
 b8_3: 'Application data flow is <b>fully documented</b>. <b>Micro-Segmentation</b> is used to isolate <b>all components</b> of the application against <b>abnormal traffic patterns</b>' 
-b8_4: 'An extensive <b>defense-in-depth</b> strategy is leveraged to protect <b>all components</b> of the application from abnormal traffic. <b>Deep packet inspection</b> is used to identify and <b>automatically drop</b> malformed requests' 
+b8_4: 'An effective <b>defense-in-depth</b> strategy is leveraged to protect <b>all components</b> of the application from abnormal traffic. <b>Deep packet inspection</b> is used to identify and <b>automatically drop</b> malformed requests' 
 b8_min: 2
 
 
