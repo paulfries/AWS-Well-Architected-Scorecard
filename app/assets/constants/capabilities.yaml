@@ -328,5 +328,5 @@ e5: 'Cost of Services'
 e5_1: 'Services are selected because they are similar to what the orgainzation is already familliar with' 
 e5_2: 'Some consideration for managed services is made (Example: using AWS RDS over a standalone SQL Server)' 
 e5_3: 'Detailed analysis of all applicable services (and their effect on cost) is made before deploying to AWS. Only the services that are currenlty supported by our team are implemented' 
-e5_4: 'Application architecutre has been altered to make use of contempoary managed services wherever possible (e.g. Lambda, DynamoDB, ECS/EKS, Fargate, API Gateway, etc.)' 
+e5_4: 'Application architecutre has been altered to make use of contempoary managed services wherever possible (e.g. Lambda, DynamoDB, ECS/EKS, Fargate, API Gateway, etc.). All components of the application runs in the most cost-effective on-demand manner' 
 e5_min: 2
