@@ -173,12 +173,12 @@ c3_3: 'Some components of the application can be scaled horizontally'
 c3_4: 'Application can scale up and down automatically based on demand' 
 c3_min: 2
 
-b8: 'Service Consumer Tests' 
-b8_1: 'No or some tests simulating a consuming application or service' 
-b8_2: 'Manual tests are executed to simulate a consuming application or service' 
-b8_3: 'Automated tests of main use cases from a consuming application or service are integrated into the build pipeline' 
-b8_4: 'Automated tests from a consuming application or service are triggered by the build pipeline, and cause the build to fail if there are errors' 
-b8_min: 2
+c4: 'Service Consumer Tests' 
+c4_1: 'No or some tests simulating a consuming application or service' 
+c4_2: 'Manual tests are executed to simulate a consuming application or service' 
+c4_3: 'Automated tests of main use cases from a consuming application or service are integrated into the build pipeline' 
+c4_4: 'Automated tests from a consuming application or service are triggered by the build pipeline, and cause the build to fail if there are errors' 
+c4_min: 2
 
 c5: 'Modular Releases' 
 c5_1: 'Entire product is a single deployable unit' 
