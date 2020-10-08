@@ -323,3 +323,10 @@ e4_2: 'Metrics can be <b>pulled after consumption</b> to determine the effective
 e4_3: 'Metrics illustrate the product health and consumption, and an ideal action is <b>eventually</b> taken based on the metrics to reduce cost' 
 e4_4: 'Metrics illustrate the product health and consumption, <b>predictive rules</b> create alerts, and action (e.g. product decisions) is taken based on the metrics' 
 e4_min: 2
+
+e5: 'Cost of Services' 
+e5_1: 'Services are selected because they are similar to what the orgainzation is <b>already familliar with</b>' 
+e5_2: '<b>Some consideration</b> for managed services is made (Example: using AWS RDS over a standalone SQL Server)' 
+e5_3: '<b>Detailed analysis of all applicable services</b> (and their effect on cost) is made before deploying to AWS. Only the services that are <b>currenlty supported</b> by our team are implemented' 
+e5_4: 'Application architecutre has been altered to make use of contempoary managed services wherever possible (e.g. Lambda, DynamoDB, ECS/EKS, Fargate, API Gateway, etc.)' 
+e5_min: 2

@@ -500,6 +500,14 @@
                     <td class="selectable"><%= f.label 4, FORMATED_CAPABILITIES("e4_4") %><%= f.radio_button :e4, "4" %> </td>
                     <td> <%= CAPABILITIES["e4_min"] %> </td>
                 </tr>
+				<tr>
+                    <td bgcolor="#dde1e4" style="border:1px solid #bbc3c9"><%= f.label CAPABILITIES["e5"] %></td>
+                    <td class="selectable"><%= f.label 1, FORMATED_CAPABILITIES("e5_1") %><%= f.radio_button :e5, "1" %> </td>
+                    <td class="selectable"><%= f.label 2, FORMATED_CAPABILITIES("e5_2") %><%= f.radio_button :e5, "2" %> </td>
+                    <td class="selectable"><%= f.label 3, FORMATED_CAPABILITIES("e5_3") %><%= f.radio_button :e5, "3" %> </td>
+                    <td class="selectable"><%= f.label 4, FORMATED_CAPABILITIES("e5_4") %><%= f.radio_button :e5, "4" %> </td>
+                    <td> <%= CAPABILITIES["e5_min"] %> </td>
+                </tr>
             </table>
 			<div class="input-group">
 				<%= f.label :comment%>

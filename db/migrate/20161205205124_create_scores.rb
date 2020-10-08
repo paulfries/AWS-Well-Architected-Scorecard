@@ -46,6 +46,7 @@ class CreateScores < ActiveRecord::Migration[5.0]
       t.integer :e2
       t.integer :e3
       t.integer :e4
+      t.integer :e5
       t.float :a
       t.float :b
       t.float :c

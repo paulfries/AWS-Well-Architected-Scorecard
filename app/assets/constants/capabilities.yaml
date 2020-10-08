@@ -312,8 +312,8 @@ e2_min: ~
 
 e3: 'Cost-Effective Resources' 
 e3_1: 'The application runs in the cloud exactly as it might run on-premesis' 
-e3_2: 'Contributors sometimes identify some simple opportunites for cost improvement (e.g. Reserved Instances)' 
-e3_3: 'Contributors sometimes identify some advanced opportunities for cost improvment (e.g. Spot Instances, auto-scalaing, managed services)' 
+e3_2: 'Pricing models are evaluated (AWS Pricing Calculator) and some simple opportunites for cost improvement (e.g. Reserved Instances)' 
+e3_3: 'Pricing models are evaluated (AWS Pricing Calculator) and some advanced opportunities for cost improvment (e.g. Spot Instances, auto-scalaing, managed services)' 
 e3_4: 'Contributors follow a defined and accepted process for Identifying cost improvment oppotunities. The application is regularly adjusted to make use of these opportunities' 
 e3_min: 2
 
@@ -323,3 +323,10 @@ e4_2: 'Metrics can be pulled after an issue happens to determine why'
 e4_3: 'Metrics illustrate the product health, and action (e.g. product decisions) is taken based on the metrics' 
 e4_4: 'Metrics illustrate the product health, predictive rules create alerts, and action (e.g. product decisions) is taken based on the metrics' 
 e4_min: ~
+
+e5: 'Cost of Services' 
+e5_1: 'Services are selected because they are similar to what the orgainzation is already familliar with' 
+e5_2: 'Some consideration for managed services is made (Example: using AWS RDS over a standalone SQL Server)' 
+e5_3: 'Detailed analysis of all applicable services (and their effect on cost) is made before deploying to AWS. Only the services that are currenlty supported by our team are implemented' 
+e5_4: 'Application architecutre has been altered to make use of contempoary managed services wherever possible (e.g. Lambda, DynamoDB, ECS/EKS, Fargate, API Gateway, etc.)' 
+e5_min: 2

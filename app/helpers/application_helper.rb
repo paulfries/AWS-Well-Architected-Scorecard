@@ -15,7 +15,7 @@ module ApplicationHelper
 		"#{CAPABILITIES["d1"]}",  "#{CAPABILITIES["d2"]}",  "#{CAPABILITIES["d3"]}",  
 		"#{CAPABILITIES["d4"]}",  "#{CAPABILITIES["d5"]}",  "#{CAPABILITIES["d6"]}",  
 		"#{CAPABILITIES["d7"]}",  "#{CAPABILITIES["d8"]}",  "#{CAPABILITIES["e1"]}",  
-		"#{CAPABILITIES["e2"]}",  "#{CAPABILITIES["e3"]}",  "#{CAPABILITIES["e4"]}"]
+		"#{CAPABILITIES["e2"]}",  "#{CAPABILITIES["e3"]}",  "#{CAPABILITIES["e4"]}", "#{CAPABILITIES["e5"]}"]
 	end
 
 	def get_category_labels

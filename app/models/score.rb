@@ -10,7 +10,7 @@ class Score < ApplicationRecord
 	avg(c4) as c4, avg(c5) as c5, avg(c6) as c6, avg(c7) as c7, avg(c8) as c8, 
 	avg(c9) as c9, avg(c10) as c10, avg(d1) as d1, avg(d2) as d2, avg(d3) as d3, 
 	avg(d4) as d4, avg(d5) as d5, avg(d6) as d6, avg(d7) as d7, avg(d8) as d8, 
-	avg(e1) as e1, avg(e2) as e2, avg(e3) as e3, avg(e4) as e4, avg(a) as a, 
+	avg(e1) as e1, avg(e2) as e2, avg(e3) as e3, avg(e4) as e4, avg(e5) as e5, avg(a) as a, 
 	avg(b) as b, avg(c) as c, avg(d) as d, avg(e) as e, avg(total) as total")}
   
 	def archive
@@ -22,7 +22,7 @@ class Score < ApplicationRecord
 		self.b1.to_i,self.b2.to_i,self.b3.to_i,self.b4.to_i,self.b5.to_i,self.b6.to_i,self.b7.to_i,self.b8.to_i,
 		self.c1.to_i,self.c2.to_i,self.c3.to_i,self.c4.to_i,self.c5.to_i,self.c6.to_i,self.c7.to_i,self.c8.to_i,self.c9.to_i,self.c10.to_i,
 		self.d1.to_i,self.d2.to_i,self.d3.to_i,self.d4.to_i,self.d5.to_i,self.d6.to_i,self.d7.to_i,self.d8.to_i,
-		self.e1.to_i,self.e2.to_i,self.e3.to_i,self.e4.to_i]
+		self.e1.to_i,self.e2.to_i,self.e3.to_i,self.e4.to_i,self.e5.to_i]
 	end
   
 	def get_category_array
@@ -30,7 +30,7 @@ class Score < ApplicationRecord
 	end
   
 	def get_expanded_category_array
-	  [[self.a.to_i]*15, [self.b.to_i]*8, [self.c.to_i]*10, [self.d.to_i]*8, [self.e.to_i]*4].flatten
+	  [[self.a.to_i]*15, [self.b.to_i]*8, [self.c.to_i]*10, [self.d.to_i]*8, [self.e.to_i]*5].flatten
 	end
   
 	def score_description_array(increment)
@@ -48,7 +48,7 @@ class Score < ApplicationRecord
 	  get_description_string("d1", self.d1.to_i,increment), get_description_string("d2", self.d2.to_i,increment), get_description_string("d3", self.d3.to_i,increment), 
 	  get_description_string("d4", self.d4.to_i,increment), get_description_string("d5", self.d5.to_i,increment), get_description_string("d6", self.d6.to_i,increment), 
 	  get_description_string("d7", self.d7.to_i,increment), get_description_string("d8", self.d8.to_i,increment), get_description_string("e1", self.e1.to_i,increment), 
-	  get_description_string("e2", self.e2.to_i,increment), get_description_string("e3", self.e3.to_i,increment), get_description_string("e4", self.e4.to_i,increment)]
+	  get_description_string("e2", self.e2.to_i,increment), get_description_string("e3", self.e3.to_i,increment), get_description_string("e4", self.e4.to_i,increment), get_description_string("e5", self.e5.to_i,increment)]
 	end
   
 	private
