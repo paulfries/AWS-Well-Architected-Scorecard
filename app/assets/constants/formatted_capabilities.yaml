@@ -2,7 +2,7 @@ a: "Operational Excellence"
 
 a1: 'Perform Operations as Code' 
 a1_1: '<b>No operations</b> are performed as code (all manual tasks)' 
-a1_2: '<b>Some operations</b> are performed as code, while <b>some</b> manual operations are manual ' 
+a1_2: '<b>Some operations</b> are performed as code, while <b>some</b> operations are manual ' 
 a1_3: '<b>Most operations</b> are performed as code, <b>few</b> manual operations are required ' 
 a1_4: '<b>All operations</b> are performed using code (CloudFormation, Elastic Beanstalk, Ansible, etc)' 
 a1_min: 2
@@ -103,12 +103,12 @@ b1_min: 3
 b2: 'Protect data in transit and at rest' 
 b2_1: '<b>No</b> data encryption is used' 
 b2_2: 'Data <b>in transit</b> is encrypted' 
-b2_3: 'Both data in transit and at rest is encrypted' 
-b2_4: 'Both data in transit and at rest is encrypted and encryption keys are <b>centrally managed</b> by the organization' 
+b2_3: 'Both <b>data in transit and at rest</b> is encrypted' 
+b2_4: 'Both data in transit and at rest is encrypted and <b>encryption keys are centrally managed</b> by the organization' 
 b2_min: 3
 
 b3: 'Security Analysis' 
-b3_1: 'Code/application has never been scanned with a web application security scanner ' 
+b3_1: 'Code/application has <b>never</b> been scanned with a web application security scanner ' 
 b3_2: 'Code/applicaiton has an <b>approved security suite</b> deployed and is <b>regularly</b> scanned for anomalies ' 
 b3_3: 'Code/application is <b>automatically scanned</b> with an approved security suite, <b>anomalies are reported</b>' 
 b3_4: 'Code/application is <b>automatically scanned</b> with an approved security suite, anomolies prioritized into active workload using the proper <b>incident management process</b>' 

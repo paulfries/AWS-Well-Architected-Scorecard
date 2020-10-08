@@ -2,7 +2,7 @@ a: "Operational Excellence"
 
 a1: 'Perform Operations as Code' 
 a1_1: 'No operations are performed as code (all manual tasks)' 
-a1_2: 'Some operations are performed as code, while some manual operations are manual ' 
+a1_2: 'Some operations are performed as code, while some operations are manual ' 
 a1_3: 'Most operations are performed as code, few manual operations are required ' 
 a1_4: 'All operations are performed using code (CloudFormation, Elastic Beanstalk, Ansible, etc)' 
 a1_min: 2
