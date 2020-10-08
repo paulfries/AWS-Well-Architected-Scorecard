@@ -91,6 +91,20 @@ a13_3: 'The solution architecture replaces <b>some</b> aspects of the infrastruc
 a13_4: 'Solution architecture is <b>serverless</b> and makes use of contempoary <b>managed services throughout</b>' 
 a13_min: 2
 
+a14: 'Continuous Integration' 
+a14_1: "No automated build pipeline. Code is <b>manually compiled</b> and may not always compile successfully" 
+a14_2: "Build pipeline contains <b>manual steps</b> but the build is never left in a failed state. Some failures may be missed" 
+a14_3: 'Build pipeline <b>requires automated tests</b> to pass before feature is considered "complete"' 
+a14_4: 'Build pipeline requires automated tests to pass and <b>failures are actively monitored and a process for handling failures is in place</b>' 
+a14_min: 3
+
+a15: 'Build Pipeline Traceability' 
+a15_1: 'Code can be built correctly - manually or via a build pipeline. Vulnerabilities are automatically detected by the source control solution' 
+a15_2: 'There is a build pipeline with a <b>visual representation</b> and contributors are <b>automatically alerted</b> when a build fails' 
+a15_3: 'Build is <b>triggered</b> by source control check-in or is scheduled, with alerts being sent out on failures' 
+a15_4: 'Build is triggered by source control check-in or a <b>build of its dependent services</b>, with alerts being sent out on failures, and if successful the build is <b>pushed across environments to production</b>' 
+a15_min: 1
+
 b: "Security"
 
 b1: 'Implement a Strong Identity foundation' 
@@ -121,16 +135,16 @@ b4_3: '<b>Most</b> security compliance standards are <b>automated</b> and <b>ano
 b4_4: '<b>All</b> security compliance standards are <b>automated</b> and <b>anomalies are reported</b> to the security team through a <b>defined process</b>' 
 b4_min: 2
 
-b5: 'Continuous Integration' 
-b5_1: "No automated build pipeline. Code is <b>manually compiled</b> and may not always compile successfully" 
-b5_2: "Build pipeline contains <b>manual steps</b> but the build is never left in a failed state. Some failures may be missed" 
-b5_3: 'Build pipeline <b>requires automated tests</b> to pass before feature is considered "complete"' 
-b5_4: 'Build pipeline requires automated tests to pass and <b>failures are actively monitored and a process for handling failures is in place</b>' 
+b5: 'Security Event Detection' 
+b5_1: "Some local logging. Events are <b>manually observed</b> and may not always be detected" 
+b5_2: "An approved <b>security tool suite</b> is installed and collects standard logs for analysis." 
+b5_3: '<b>Application/Environment specific</b> security event logging is enabled throughout the application architecture. Logs are transmitted to a <b>central security log repository</b> for anlysis' 
+b5_4: '<b>Application/Environment specific</b> security event logging is enabled throughout the application architecture. Logs are transmitted to a <b>central security log repository</b> for analyss. <b>Anomalies are automatically detected</b> and <b>trigger</b> an approprate incident management process' 
 b5_min: 3
 
-b6: 'Deployment Strategy' 
-b6_1: 'Contributors do not follow a documented or consistent deployment strategy' 
-b6_2: 'Contributors follow a <b>defined</b> deployment strategy' 
+b6: 'Change / Deployment Strategy' 
+b6_1: 'Contributors do not follow a documented or consistent deployment or change management strategy' 
+b6_2: 'Contributors follow a <b>defined</b> deployment and change management process' 
 b6_3: 'Contributors follow a defined deployment strategy that includes <b>automated</b> rollbacks, regression tests, configs, and tracking' 
 b6_4: 'Contributors follow a defined deployment strategy that is <b>fully automated</b> and includes regression tests, configs, tracking, and <b>database releases</b>' 
 b6_min: 2
@@ -142,12 +156,12 @@ b7_3: 'Sensitive data has been <b>abstracted</b>, and configurations are <b>huma
 b7_4: "Sensitive data has been abstracted, and configurations are human readable All configurations are <b>automated</b> with tools that support <b>monitoring and alerting</b> with minimal environment-specific data" 
 b7_min: 3
 
-b8: 'Build Pipeline Traceability' 
-b8_1: 'Code can be built correctly - manually or via a build pipeline. Vulnerabilities are automatically detected by the source control solution' 
-b8_2: 'There is a build pipeline with a <b>visual representation</b> and contributors are <b>automatically alerted</b> when a build fails' 
-b8_3: 'Build is <b>triggered</b> by source control check-in or is scheduled, with alerts being sent out on failures' 
-b8_4: 'Build is triggered by source control check-in or a <b>build of its dependent services</b>, with alerts being sent out on failures, and if successful the build is <b>pushed across environments to production</b>' 
-b8_min: 1
+b8: 'Network Security Controls' 
+b8_1: '<b>Some</b> network port and protocol requirements are documented' 
+b8_2: 'Application data flow is <b>fully documented</b>. Some standard network security/access controls are in place' 
+b8_3: 'Application data flow is <b>fully documented</b>. <b>Micro-Segmentation</b> is used to isolate <b>all components</b> of the application against <b>abnormal traffic patterns</b>' 
+b8_4: 'An extensive <b>defense-in-depth</b> strategy is leveraged to protect <b>all components</b> of the application from abnormal traffic. <b>Deep packet inspection</b> is used to identify and <b>automatically drop</b> malformed requests' 
+b8_min: 2
 
 
 c: "Reliability"
