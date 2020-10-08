@@ -100,7 +100,7 @@ a14_min: 3
 
 a15: 'Build Pipeline Traceability' 
 a15_1: 'Code can be built correctly - manually or via a build pipeline. Vulnerabilities are automatically detected by the source control solution' 
-a15_2: 'There is a build pipeline with a <b>visual representation</b> and contributors are automatically alerted when a build fails' 
+a15_2: 'There is a build pipeline with a visual representation and contributors are automatically alerted when a build fails' 
 a15_3: 'Build is triggered by source control check-in or is scheduled, with alerts being sent out on failures' 
 a15_4: 'Build is triggered by source control check-in or a build of its dependent services, with alerts being sent out on failures, and if successful the build is pushed across environments to production' 
 a15_min: 1
