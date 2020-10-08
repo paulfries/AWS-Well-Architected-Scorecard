@@ -339,7 +339,8 @@ a .stats-item:hover .stats-title{
 }
 
 .selectable.selected{
-	background: #D0006F;
+/*	background: #D0006F; */
+	background: #e10;
 	color:white;
 }
 
