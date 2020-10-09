@@ -4,7 +4,7 @@ class Score < ApplicationRecord
   
 	scope :summary, -> { joins(:product).where(latest: true).select("avg(a1) as a1, avg(a2) as a2, avg(a3) as a3, 
 	avg(a4) as a4, avg(a5) as a5, avg(a6) as a6, avg(a7) as a7, avg(a8) as a8, 
-	avg(a9) as a9, avg(a10) as a10, avg(a11) as a11, avg(a12) as a12, avg(a13) as a13, avg(a14) as a14, 
+	avg(a9) as a9, avg(a10) as a10, avg(a11) as a11, avg(a12) as a12, avg(a13) as a13, avg(a14) as a14, avg(a15) as a15,
 	avg(a16) as a16, avg(a17) as a17, avg(a18) as a18, avg(a19) as a19, avg(a20) as a20,
 	avg(b1) as b1, avg(b2) as b2, avg(b3) as b3, avg(b4) as b4, avg(b5) as b5, avg(b6) as b6, 
 	avg(b7) as b7, avg(b8) as b8, avg(c1) as c1, avg(c2) as c2, avg(c3) as c3, 
