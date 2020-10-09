@@ -24,7 +24,7 @@ objects:
       importPolicy: {}
       annotations:
         description: Tech maturity for Takeda 
-        tags: ticketmaster,techmaturity
+        tags: takeda,techmaturity
         version: "${APP_VERSION}"
 - apiVersion: v1
   kind: Secret
