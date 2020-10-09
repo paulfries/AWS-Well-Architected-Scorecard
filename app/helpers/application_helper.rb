@@ -6,6 +6,8 @@ module ApplicationHelper
 		"#{CAPABILITIES["a7"]}",  "#{CAPABILITIES["a8"]}",  "#{CAPABILITIES["a9"]}",  
 		"#{CAPABILITIES["a10"]}",  "#{CAPABILITIES["a11"]}",  "#{CAPABILITIES["a12"]}",
 		"#{CAPABILITIES["a13"]}",  "#{CAPABILITIES["a14"]}",  "#{CAPABILITIES["a15"]}",
+		"#{CAPABILITIES["a16"]}",  "#{CAPABILITIES["a17"]}",  "#{CAPABILITIES["a18"]}",
+		"#{CAPABILITIES["a19"]}",  "#{CAPABILITIES["a20"]}", 
 		"#{CAPABILITIES["b1"]}",  "#{CAPABILITIES["b2"]}",  "#{CAPABILITIES["b3"]}",  
 		"#{CAPABILITIES["b4"]}",  "#{CAPABILITIES["b5"]}",  "#{CAPABILITIES["b6"]}",  
 		"#{CAPABILITIES["b7"]}",  "#{CAPABILITIES["b8"]}",  "#{CAPABILITIES["c1"]}",  

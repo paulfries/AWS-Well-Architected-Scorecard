@@ -56,62 +56,98 @@ a8_3: 'Contributors aim to reuse vs rebuild while coding and actively evangelize
 a8_4: 'Contributors seek to reuse vs rebuild as part of the planning process, actively evangelize to maximize code reuse by others, and actively contributes to other code' 
 a8_min: ~
 
-a9: 'Build for Availability' 
-a9_1: 'Product is not tested for extreme failures (e.g. a node/instance becoming unavailable)' 
-a9_2: 'Product is manually tested for extreme failures and automatically tested for error use cases. Single points of failure are documented' 
-a9_3: 'Automated resilience testing framework (e.g. Chaos Monkey) runs rampant on the product in a staging environment without failures' 
-a9_4: 'Automated resilience testing framework (e.g. Chaos Monkey) runs rampant on the product in a staging and production environment without failures and all errors (e.g. code, web server, OS, etc...) are caught and escalated' 
-a9_min: 2
 
-a10: 'Incremental Updates' 
-a10_1: 'Contributors do not use prototyping to estimate or validate any features' 
-a10_2: 'Contributors sometimes use prototyping to estimate larger features more confidently' 
-a10_3: 'Contributors often use prototyping to validate features with users before completion' 
-a10_4: 'Contributors always use prototyping to validate features with users before completion' 
+a9: 'Incremental Updates' 
+a9_1: 'Contributors do not use prototyping to estimate or validate any features' 
+a9_2: 'Contributors sometimes use prototyping to estimate larger features more confidently' 
+a9_3: 'Contributors often use prototyping to validate features with users before completion' 
+a9_4: 'Contributors always use prototyping to validate features with users before completion' 
+a9_min: ~
+
+a10: 'Operational Readiness' 
+a10_1: 'The Application is approprately managed on-premesis, but no feasible plan exists for managing it once migrated to the cloud' 
+a10_2: 'Application owners understand the need for a cloud operating model to support the application, but have some degree of skill or resource gap. A plan is in place to address the concern' 
+a10_3: 'The application owner has developed a workable clod operating model for the application and has most of the resources necessary to support it' 
+a10_4: 'The applicaiton owner has developed a workable cloud operating model for the applicaiton and has all of the resources necessary to support it' 
 a10_min: ~
 
-a11: 'Operational Readiness' 
-a11_1: 'The Application is approprately managed on-premesis, but no feasible plan exists for managing it once migrated to the cloud' 
-a11_2: 'Application owners understand the need for a cloud operating model to support the application, but have some degree of skill or resource gap. A plan is in place to address the concern' 
-a11_3: 'The application owner has developed a workable clod operating model for the application and has most of the resources necessary to support it' 
-a11_4: 'The applicaiton owner has developed a workable cloud operating model for the applicaiton and has all of the resources necessary to support it' 
+a11: 'Behavior Driven Development (BDD)' 
+a11_1: 'Contributors do not have an understanding of BDD methodology' 
+a11_2: 'Contributors understand BDD methodology, and practice it on some features' 
+a11_3: 'Contributors understand BDD methodology, and practice it on most features' 
+a11_4: 'BDD methodology is how things get done' 
 a11_min: ~
 
-a12: 'Behavior Driven Development (BDD)' 
-a12_1: 'Contributors do not have an understanding of BDD methodology' 
-a12_2: 'Contributors understand BDD methodology, and practice it on some features' 
-a12_3: 'Contributors understand BDD methodology, and practice it on most features' 
-a12_4: 'BDD methodology is how things get done' 
-a12_min: ~
+a12: 'Infrasructure Baseline' 
+a12_1: 'Infrastrucutre makes use of non-standard components (OS, Databse, or other) - Exception Requred' 
+a12_2: 'Standard (approved) compnents are used in the solution architecture' 
+a12_3: 'The solution architecture replaces some aspects of the infrastrucure with managed cloud solutions' 
+a12_4: 'Solution architecture is serverless and makes use of contempoary managed services throughout' 
+a12_min: 2
 
-a13: 'Infrasructure Baseline' 
-a13_1: 'Infrastrucutre makes use of non-standard components (OS, Databse, or other) - Exception Requred' 
-a13_2: 'Standard (approved) compnents are used in the solution architecture' 
-a13_3: 'The solution architecture replaces some aspects of the infrastrucure with managed cloud solutions' 
-a13_4: 'Solution architecture is serverless and makes use of contempoary managed services throughout' 
-a13_min: 2
+a13: 'Continuous Integration' 
+a13_1: "No automated build pipeline. Code is manually compiled and may not always compile successfully" 
+a13_2: "Build pipeline contains manual steps but the build is never left in a failed state. Some failures may be missed" 
+a13_3: 'Build pipeline requires automated tests to pass before feature is considered "complete"' 
+a13_4: 'Build pipeline requires automated tests to pass andfailures are actively monitored and a process for handling failures is in place' 
+a13_min: 3
 
-a14: 'Continuous Integration' 
-a14_1: "No automated build pipeline. Code is manually compiled and may not always compile successfully" 
-a14_2: "Build pipeline contains manual steps but the build is never left in a failed state. Some failures may be missed" 
-a14_3: 'Build pipeline requires automated tests to pass before feature is considered "complete"' 
-a14_4: 'Build pipeline requires automated tests to pass andfailures are actively monitored and a process for handling failures is in place' 
-a14_min: 3
+a14: 'Build Pipeline Traceability' 
+a14_1: 'Code can be built correctly - manually or via a build pipeline. Vulnerabilities are automatically detected by the source control solution' 
+a14_2: 'There is a build pipeline with a visual representation and contributors are automatically alerted when a build fails' 
+a14_3: 'Build is triggered by source control check-in or is scheduled, with alerts being sent out on failures' 
+a14_4: 'Build is triggered by source control check-in or a build of its dependent services, with alerts being sent out on failures, and if successful the build is pushed across environments to production' 
+a14_min: 1
 
-a15: 'Build Pipeline Traceability' 
-a15_1: 'Code can be built correctly - manually or via a build pipeline. Vulnerabilities are automatically detected by the source control solution' 
-a15_2: 'There is a build pipeline with a visual representation and contributors are automatically alerted when a build fails' 
-a15_3: 'Build is triggered by source control check-in or is scheduled, with alerts being sent out on failures' 
-a15_4: 'Build is triggered by source control check-in or a build of its dependent services, with alerts being sent out on failures, and if successful the build is pushed across environments to production' 
-a15_min: 1
+a15: 'Modular Releases' 
+a15_1: 'Entire product is a single deployable unit' 
+a15_2: 'Some of the product is separated into different deployable units' 
+a15_3: 'Most of the product is separated into many deployable units' 
+a15_4: 'Pieces of product/service is independently deployable and the lifecycle of change for different parts of the product is well understood and taken into account for the deployment architecture' 
+a15_min: ~
+
+a16: 'Continuous Delivery' 
+a16_1: 'Manual deployment and testing are performed in staging' 
+a16_2: 'Manual deployment, and automatic testing are performed in staging' 
+a16_3: 'Automated deployment and tests are performed in staging' 
+a16_4: 'Automated deployment and tests are performed in production when code is checked in as "zero touch" continuous deployments' 
+a16_min: 2
+
+a17: 'Deployment Methodology' 
+a17_1: 'Able to automatically or manually deploy a new release to a single server/cluster before rolling to the next' 
+a17_2: 'Able to manually determine the impact of a partial (canary) deployment' 
+a17_3: 'Able to automatically determine the impact of a partial (canary) deployment' 
+a17_4: 'Zero downtime, fully automated blue-green or red-black deployments spin up and validate a canary instance in production with the ability to segment a group or percentage of traffic, switch traffic over, and shut down the previous version once successful' 
+a17_min: ~
+
+a18: 'Dependency Management (Code)' 
+a18_1: 'Dependencies are uncertain' 
+a18_2: 'Manual dependency management' 
+a18_3: 'Automatic dependency management' 
+a18_4: 'Contributors follow a defined strategy to regularly update dependencies to newer versions' 
+a18_min: ~
+
+a19: 'Push Button Releases' 
+a19_1: 'Releases require more than one contributor to deploy' 
+a19_2: 'Releases require manual intervention' 
+a19_3: 'Code can be deployed via a push button release, but not the environment' 
+a19_4: 'Production-like environments can be prepared through version controlled scripts and run via push button deployments' 
+a19_min: ~
+
+a20: 'Scriptable DB Releases' 
+a20_1: 'Database specialist makes schema / migrations on behalf of the contributors' 
+a20_2: 'Contributors create scripts to perform schema changes and migrations, but database specialist executes them' 
+a20_3: 'DB schema changes and migrations are made directly from version control as a manual set during release' 
+a20_4: 'DB schema changes and migrations are made directly from version control and consistent across all environments, including production' 
+a20_min: ~
 
 b: "Security"
 
 b1: 'Implement a Strong Identity foundation' 
 b1_1: 'Application and/or supporting infrastrucure lacks appropriate identity or access control mechanisms ' 
-b1_2: 'Applicaiton and/or supporting infrastrucure manages identity independantly of organizational standards' 
-b1_3: 'Application and supporting infrastructure use an approved identity and access management standard' 
-b1_4: 'Application and supporting infrastructure use an approved identity and access management standard, strong separation of duties is defined and maintained' 
+b1_2: 'Applicaiton and/or supporting infrastrucure manages identity independently of organizational standards' 
+b1_3: 'Application and supporting infrastructure use an approved identity and access management standard, some separation of duties is defined and enforced' 
+b1_4: 'Application and supporting infrastructure use an approved identity and access management standard, comprehensive separation of duties is defined and enforced' 
 b1_min: 3
 
 b2: 'Protect data in transit and at rest' 
@@ -125,7 +161,7 @@ b3: 'Security Analysis'
 b3_1: 'Code/application has never been scanned with a web application security scanner ' 
 b3_2: 'Code/applicaiton has an approved security suite deployed and is regularly scanned for anomalies ' 
 b3_3: 'Code/application is automatically scanned with an approved security suite, anomalies are reported' 
-b3_4: 'Code/application is automatically scanned with an approved security suite and defects are prioritized into active workload using the proper incident management process' 
+b3_4: 'Code/application is automatically scanned with an approved security suite and defects are prioritized into active SecOps workload using the proper incident management process' 
 b3_min: 2
 
 b4: 'Automated Security Compliance' 
@@ -157,7 +193,7 @@ b7_4: "Sensitive data has been abstracted, and configurations are human readable
 b7_min: 3
 
 b8: 'Network Security Controls' 
-b8_1: 'Some network port and protocol requirements are documented' 
+b8_1: 'Some network port and protocol requirements are documented. Standard network security controls are in place' 
 b8_2: 'Application data flow is fully documented. Some standard network security/access controls are in place' 
 b8_3: 'Application data flow is fully documented. Micro-Segmentation is used to isolate all components of the application against abnormal traffic patterns' 
 b8_4: 'An effective defense-in-depth strategy is leveraged to protect all components of the application from abnormal traffic. Deep packet inspection is used to identify and automatically drop malformed requests' 
@@ -194,47 +230,47 @@ c4_3: 'Automated tests of main use cases from a consuming application or service
 c4_4: 'Automated tests from a consuming application or service are triggered by the build pipeline, and cause the build to fail if there are errors' 
 c4_min: 2
 
-c5: 'Modular Releases' 
-c5_1: 'Entire product is a single deployable unit' 
-c5_2: 'Some of the product is separated into different deployable units' 
-c5_3: 'Most of the product is separated into many deployable units' 
-c5_4: 'Pieces of product/service is independently deployable and the lifecycle of change for different parts of the product is well understood and taken into account for the deployment architecture' 
-c5_min: ~
+c5: 'Build for Availability' 
+c5_1: 'Product is not tested for extreme failures (e.g. a node/instance becoming unavailable)' 
+c5_2: 'Product is manually tested for extreme failures and automatically tested for error use cases. Single points of failure are documented' 
+c5_3: 'Automated resilience testing is performed on the product in a staging environment without failures' 
+c5_4: 'Automated resilience testing is performed on the product in a staging and production environment without failures and all errors (e.g. code, web server, OS, etc...) are caught and escalated' 
+c5_min: 2
 
-c6: 'Continuous Delivery' 
-c6_1: 'Manual deployment and testing are performed in staging' 
-c6_2: 'Manual deployment, and automatic testing are performed in staging' 
-c6_3: 'Automated deployment and tests are performed in staging' 
-c6_4: 'Automated deployment and tests are performed in production when code is checked in as "zero touch" continuous deployments' 
+c6: 'Architecture Design' 
+c6_1: 'Architecture is a traditonal "monolithic" application architecture' 
+c6_2: 'Architecture makes use of some managed services (e.g. DynamoDB) to improve scalability, performance, and availability ' 
+c6_3: 'Architecture is a Services oriented Architecture (SOA) making software components reusable via service interfaces' 
+c6_4: 'Architecture is serverless and/or microservices-based' 
 c6_min: 2
 
-c7: 'Deployment Methodology' 
-c7_1: 'Able to automatically or manually deploy a new release to a single server/cluster before rolling to the next' 
-c7_2: 'Able to manually determine the impact of a partial (canary) deployment' 
-c7_3: 'Able to automatically determine the impact of a partial (canary) deployment' 
-c7_4: 'Zero downtime, fully automated blue-green or red-black deployments spin up and validate a canary instance in production with the ability to segment a group or percentage of traffic, switch traffic over, and shut down the previous version once successful' 
-c7_min: ~
+c7: 'Demand Management' 
+c7_1: 'Workload is not readilly scalable due to a change in demand' 
+c7_2: 'Workload can be manually scaled to account for changes in demand' 
+c7_3: 'Most components of the workload are dynammically scalable, and react automatically to changes in demand' 
+c7_4: 'Workload is highly scalalble and all compnoents of the application adjust to changes in demand automatically' 
+c7_min: 2
 
-c8: 'Dependency Management' 
-c8_1: 'Dependencies are uncertain' 
-c8_2: 'Manual dependency management' 
-c8_3: 'Automatic dependency management' 
-c8_4: 'Contributors follow a defined strategy to regularly update dependencies to newer versions' 
+c8: 'Dependency Management (Business Services)' 
+c8_1: 'External/internal dependencies on this workload are uncertian' 
+c8_2: 'Some applicaiton dependancies are known, but not formally documented' 
+c8_3: 'All leads and feeds to this applicaiton/service are well documented' 
+c8_4: 'All leads and feeds to this applicaiton/service are well documented. Regular automated discovery is performed to identify changes in the dependancy map' 
 c8_min: ~
 
-c9: 'Push Button Releases' 
-c9_1: 'Releases require more than one contributor to deploy' 
-c9_2: 'Releases require manual intervention' 
-c9_3: 'Code can be deployed via a push button release, but not the environment' 
-c9_4: 'Production-like environments can be prepared through version controlled scripts and run via push button deployments' 
-c9_min: ~
+c9: 'Workload Monitoring' 
+c9_1: 'Basic infrastrucure metrics are collected (CPU, Memory, Network, Disk Space, etc)' 
+c9_2: 'In addition to infrastrucure metrics, application availaiblity is externally verified via a regular synthetic test' 
+c9_3: 'Applicaiton performance monitoring is built into the applicaiton (e.g. Amazon X-Ray). Anomalies trigger a notification or incident management process' 
+c9_4: 'Extensive infrastrucure and applicaiton monitoring is deployed. Anomalies automatically resolve, and/or trigger an incident management process' 
+c9_min: 2
 
-c10: 'Scriptable DB Releases' 
-c10_1: 'Database specialist makes schema / migrations on behalf of the contributors' 
-c10_2: 'Contributors create scripts to perform schema changes and migrations, but database specialist executes them' 
-c10_3: 'DB schema changes and migrations are made directly from version control as a manual set during release' 
-c10_4: 'DB schema changes and migrations are made directly from version control and consistent across all environments, including production' 
-c10_min: ~
+c10: 'Failure Management' 
+c10_1: 'Basic backup operations are performed at regular intervals' 
+c10_2: 'RTO, RPO is defined. Backup/restore operations are presumed to be sufficient' 
+c10_3: 'RTO, RPO is well defined. A disaster recovery plan accounts for all aspects of the applicaiton' 
+c10_4: 'RTO, RPO is well defined. A disaster recovery plan accounts for all aspects of the applicaiton and is regulary tested' 
+c10_min: 2
 
 d: "Performance Efficiency"
 
