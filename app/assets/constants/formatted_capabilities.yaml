@@ -14,12 +14,12 @@ a2_3: 'Develop on <b>feature branches</b> that are short-lived (i.e. less than t
 a2_4: "<b>Develop and release from master</b> with at least <b>daily code check-ins</b> using a process allowing traceability to the requested feature " 
 a2_min: 1
 
-a3: 'Test Suite' 
-a3_1: '<b>No or some</b> unit tests, functional tests, critical path tests, and performance tests' 
-a3_2: '<b>Some</b> unit tests, functional tests, critical path tests, performance tests with <b>all of them passing successfully</b>' 
-a3_3: 'Actively builds and maintains unit tests, functional tests, critical path tests, performance tests with all of them successfully passing for <b>positive flows</b>' 
-a3_4: 'Actively builds and maintains unit tests, functional tests, critical path tests, performance tests with all of them successfully passing for <b>positive and negative flows</b> maintaining <b>100% critical path coverage</b>' 
-a3_min: 3
+a3: 'DevOps Practice' 
+a3_1: 'Environments in production are not controlled by contributors building the product' 
+a3_2: 'Environments in <b>staging</b> are <b>controlled and partially managed</b> by the contributors building the product and receive issues escalations for that environment' 
+a3_3: 'Environments in <b>production</b> are <b>owned</b> by the contributors building the product, but <b>controlled by someone else</b>' 
+a3_4: '<b>DevOps model is followed</b> - environments in production are fully controlled and owned by the contributors building the product, including alerts and issue escalations' 
+a3_min: 2
 
 a4: 'Logging and Telemetry' 
 a4_1: '<b>Default</b> or customized logging and <b>no telemetry</b>' 
@@ -238,12 +238,12 @@ c10_min: ~
 
 d: "Performance Efficiency"
 
-d1: 'DevOps Practice' 
-d1_1: 'Environments in production are not controlled by contributors building the product' 
-d1_2: 'Environments in <b>staging</b> are <b>controlled and partially managed</b> by the contributors building the product and receive issues escalations for that environment' 
-d1_3: 'Environments in <b>production</b> are <b>owned</b> by the contributors building the product, but <b>controlled by someone else</b>' 
-d1_4: '<b>DevOps model is followed</b> - environments in production are fully controlled and owned by the contributors building the product, including alerts and issue escalations' 
-d1_min: ~
+d1: 'Evoloving Workload' 
+d1_1: '<b>No formal mechanism exists</b> to regularly review the solution architecture for performance improvements based on new technologies or capabilities as they become available' 
+d1_2: 'The solution archtecture is reviewed on an <b>informal, as-needed basis</b> for potential technology evolution' 
+d1_3: 'The solution architecture is <b>regularly reviewed</b>. New potential performance enahancing <b>technologies are identified</b>' 
+d1_4: 'A <b>formal process exists</b> to regularly identify new potential performance enahancing technologies and, if applicabble, <b>implementation steps are added to the DevOps team backlog</b>' 
+d1_min: 2
 
 d2: 'Runbook Adoption' 
 d2_1: 'No triage runbook has been created' 
