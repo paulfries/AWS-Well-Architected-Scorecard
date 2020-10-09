@@ -20,7 +20,7 @@ objects:
     - name: "${APP_VERSION}"
       from:
         kind: DockerImage
-        name: docker.io/ticketmaster/techmaturity:${APP_VERSION}
+        name: docker.io/paulfries/techmaturity:${APP_VERSION}
       importPolicy: {}
       annotations:
         description: Tech maturity for Takeda 
