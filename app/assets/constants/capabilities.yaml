@@ -81,7 +81,7 @@ a11_min: ~
 a12: 'Infrasructure Baseline' 
 a12_1: 'Infrastrucutre makes use of non-standard components (OS, Databse, or other) - Exception Requred' 
 a12_2: 'Standard (approved) compnents are used in the solution architecture' 
-a12_3: 'The solution architecture replaces some aspects of the infrastrucure with managed cloud solutions' 
+a12_3: 'The solution architecture replaces some aspects of the infrastructure with managed cloud solutions' 
 a12_4: 'Solution architecture is serverless and makes use of contempoary managed services throughout' 
 a12_min: 2
 
@@ -144,8 +144,8 @@ a20_min: ~
 b: "Security"
 
 b1: 'Implement a Strong Identity foundation' 
-b1_1: 'Application and/or supporting infrastrucure lacks appropriate identity or access control mechanisms ' 
-b1_2: 'Applicaiton and/or supporting infrastrucure manages identity independently of organizational standards' 
+b1_1: 'Application and/or supporting infrastructure lacks appropriate identity or access control mechanisms ' 
+b1_2: 'Applicaiton and/or supporting infrastructure manages identity independently of organizational standards' 
 b1_3: 'Application and supporting infrastructure use an approved identity and access management standard, some separation of duties is defined and enforced' 
 b1_4: 'Application and supporting infrastructure use an approved identity and access management standard, comprehensive separation of duties is defined and enforced' 
 b1_min: 3
@@ -259,10 +259,10 @@ c8_4: 'All leads and feeds to this applicaiton/service are well documented. Regu
 c8_min: ~
 
 c9: 'Workload Monitoring' 
-c9_1: 'Basic infrastrucure metrics are collected (CPU, Memory, Network, Disk Space, etc)' 
-c9_2: 'In addition to infrastrucure metrics, application availaiblity is externally verified via a regular synthetic test' 
+c9_1: 'Basic infrastructure metrics are collected (CPU, Memory, Network, Disk Space, etc)' 
+c9_2: 'In addition to infrastructure metrics, application availaiblity is externally verified via a regular synthetic test' 
 c9_3: 'Applicaiton performance monitoring is built into the applicaiton (e.g. Amazon X-Ray). Anomalies trigger a notification or incident management process' 
-c9_4: 'Extensive infrastrucure and applicaiton monitoring is deployed. Anomalies automatically resolve, and/or trigger an incident management process' 
+c9_4: 'Extensive infrastructure and applicaiton monitoring is deployed. Anomalies automatically resolve, and/or trigger an incident management process' 
 c9_min: 2
 
 c10: 'Failure Management' 

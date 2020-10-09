@@ -80,7 +80,7 @@ a11_min: ~
 a12: 'Infrasructure Baseline' 
 a12_1: 'Infrastrucutre makes use of <b>non-standard components</b> (OS, Databse, or other) - <b>Exception Requred</b>' 
 a12_2: 'Standard (approved) compnents are used in the solution architecture' 
-a12_3: 'The solution architecture replaces <b>some</b> aspects of the infrastrucure with <b>managed cloud solutions</b>' 
+a12_3: 'The solution architecture replaces <b>some</b> aspects of the infrastructure with <b>managed cloud solutions</b>' 
 a12_4: 'Solution architecture is <b>serverless</b> and makes use of contempoary <b>managed services throughout</b>' 
 a12_min: 2
 
@@ -143,8 +143,8 @@ a20_min: ~
 b: "Security"
 
 b1: 'Implement a Strong Identity foundation' 
-b1_1: 'Application and/or supporting infrastrucure <b>lacks appropriate identity or access control mechanisms</b> ' 
-b1_2: 'Applicaiton and/or supporting infrastrucure manages identity <b>independently of organizational standards</b>' 
+b1_1: 'Application and/or supporting infrastructure <b>lacks appropriate identity or access control mechanisms</b> ' 
+b1_2: 'Applicaiton and/or supporting infrastructure manages identity <b>independently of organizational standards</b>' 
 b1_3: 'Application and supporting infrastructure use an <b>approved</b> identity and access management standard <b>some separation of duties</b> is defined and enforced' 
 b1_4: 'Application and supporting infrastructure use an <b>approved</b> identity and access management standard, and <b>comprehensive separation of duties</b> is defined and enforced' 
 b1_min: 3
@@ -258,10 +258,10 @@ c8_4: 'All leads and feeds to this applicaiton/service are well documented. <b>R
 c8_min: ~
 
 c9: 'Workload Monitoring' 
-c9_1: '<b>Basic infrastrucure metrics</b> are collected (CPU, Memory, Network, Disk Space, etc)' 
+c9_1: '<b>Basic infrastructure metrics</b> are collected (CPU, Memory, Network, Disk Space, etc)' 
 c9_2: 'In addition to infrastructure metrics, <b>application availaiblity</b> is <b>externally verified</b> via a <b>regular synthetic test</b>' 
 c9_3: '<b>Applicaiton performance monitoring</b> (e.g. Amazon X-Ray) is built into the applicaiton. <b>Anomalies trigger a notification or incident management process</b>' 
-c9_4: '<b>Extensive</b> infrastrucure and applicaiton monitoring is deployed. Anomalies <b>automatically resolve</b>, and/or trigger an incident management process' 
+c9_4: '<b>Extensive</b> infrastructure and applicaiton monitoring is deployed. Anomalies <b>automatically resolve</b>, and/or trigger an incident management process' 
 c9_min: 2
 
 c10: 'Failure Management' 
