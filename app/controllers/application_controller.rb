@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
 
   def first_time_visit
     cookies.permanent[:first_visit] = 0
-    @first_visit = CONFIGS[:enable_first_time_user_exp] ? true : false
+    @first_visit = CONFIGS[:enable_first_time_user_exp] ? false : false
   end
 end
