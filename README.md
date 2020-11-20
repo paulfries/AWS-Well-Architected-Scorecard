@@ -18,7 +18,9 @@ One can’t tell if they're winning without a scoreboard, so this app provides a
 
 The best thing about this model is that it does not prescribe solutions. Rather, it offers standards with an aim to give teams a clear path towards efficient product development at scale. The model can be easily tailored to meet your specific needs. This model can really be applied ot annything. For example, one can easilly apply this model to products ranging from VAX code to JavaScript libraries. It’s a great vehicle for sharing and rallying around a common vision.
 
+![Screen 1](app/assets/images/Screen1.png)
 
+![Screen 2](app/assets/images/Screen2.png)
 
 ----
 ## Run The Program Locally
