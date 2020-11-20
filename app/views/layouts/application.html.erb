@@ -4,11 +4,11 @@
 		<meta name="description" content="open source portal that measures the progress and maturity of their product" />
 		<meta name="keywords" content="Measures, progress, maturity, standard, automation, product, development, tech, scores, assessment, data, model, innovation, open, visibility, efficiency, improve, developers, delivery" />
 		<meta property="og:title" content="Tech Maturity" />
-		<meta property="og:description" content="Tech Maturity is an open source portal that measures the progress and maturity of their product" />
+		<meta property="og:description" content="AWS Well-Architected Scorecard is an open source portal that measures the progress and maturity of their product" />
 		<meta property="og:url" content="techmaturity.com" />
 		<meta property="og:image" content="../assets/images/rocket-fav.ico" />
 		<meta name="twitter:card" content="summary_large_image">
-		<title>Takeda Tech Maturity</title>
+		<title>AWS Well-Architected Scorecardy</title>
 		<%= csrf_meta_tags %>
 		<%= favicon_link_tag 'rocket-fav.ico' %>
 		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -24,7 +24,7 @@
 					<div class="message-wrapper">
 						<div class="message-wrapper-header">
 							<div class="title">
-								<p class="text-center"> Welcome to the ECS Tech Maturity portal! We're so glad you're here! 🙌 </p>
+								<p class="text-center"> Welcome to the Well-Architected Scorecard portal! We're so glad you're here! 🙌 </p>
 							</div>
 							<div class="close-modal">
 								<div class="icon-cancel" onclick="closeModal()"></div>
@@ -35,7 +35,7 @@
 								<div class="message message-left">
 									<h3 class="text-center"><b>Want to jump right in?</h3></b><br><br>
 									<p class="message-body text-center"> Ok, we get it. <%= link_to 'Add a new Asset', new_product_path %> to get started. </p>
-									<p class="message-body text-center"> This assessment is <b>not</b> a "pass/fail" test. It simply gives the ECS an idea of the current architecture state, and where we might need to focus our resources to assist you </p>
+									<p class="message-body text-center"> This assessment is <b>not</b> a "pass/fail" test. It simply gives the team an idea of the current architecture state, and where we might need to focus our resources to assist you </p>
 									<p class="message-body text-center"> Please score your asset accurately. If you find that you are somewhere "between" two scores, select the lower score.</p>
 									<p class="text-center message-button"><button class="button-aux" onclick="closeModal()"> Get Started !! </button> </p>
 								</div>
@@ -62,8 +62,8 @@
 			<header>
 				<div class="page__content header">
 					<img class="title-icon pull-left" src=<%=asset_path 'rocket.png' %>>
-					<div class="title pull-left"><a href="<%= root_path %>"> Solution Architecture Scorecard
-						<span class="legal-copy" style='color:#F6F7F9'>by the Enterprise Cloud Service</span>
+					<div class="title pull-left"><a href="<%= root_path %>">Well-Architected Scorecard
+						<span class="legal-copy" style='color:#F6F7F9'>by AWS Professional Services</span>
 					</a></div>
 					<div class="pull-right">
 						<nav class="navbar navbar-default navbar-techmaturity">
@@ -95,9 +95,9 @@
 			<footer>
 				<div class="page__content">
 					<div class="footer">
-						<p> Developed with <span style="color:#D0006F;">&#x2764; </span> by the Takeda ECS Team
-						<a href="http://www.takeda.com/">
-							<img class="footer-tm-logo" src=<%= asset_path 'takeda_logo.svg'%>>
+						<p> Developed with <span style="color:#D0006F;">&#x2764; </span> at
+						<a href="https://aws.amazon.com/professional-services/">
+							<img class="footer-tm-logo" src=<%= asset_path 'aws-logo-white.png'%>>
 						</a>
 					</div>
 				</div>

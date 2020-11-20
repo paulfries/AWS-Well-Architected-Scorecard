@@ -11,8 +11,8 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 1;
-    background-color: #e10;
-    border-bottom: 5px Solid #e10;
+    background-color: #232F3E;
+    border-bottom: 5px Solid #232F3E;
 }
 
 .title a{
@@ -28,7 +28,7 @@ header{
 }
 
 .title a:hover{
-	color: #D0006F;
+	color: #FF9900;
 }
 
 .title a:hover, a:active, a:visited, a:focus {
@@ -54,7 +54,7 @@ img.title-icon{
 }
 
 .page__content.subheader{
-	background-color:#F8CCCB;
+	background-color:#0000;
 	padding: 10px 70px 10px 60px;
 	width: 100%;
 	height: 60px;
@@ -81,15 +81,15 @@ footer{
     width: 100%;
     padding: 10px 15px 10px 15px;
     line-height: 1;
-    background-color: #F8CCCB;
+    background-color: #232F3E;
     position: fixed;
     bottom: 0;
-    border-top: 5px Solid #e10;
+    border-top: 5px Solid #FF9900;
 }
 
 .footer{
 	width: fit-content;;
-	color: #000000;
+	color: #EAEDED;
 	margin: 0 auto;
 	width: intrinsic;           /* Safari/WebKit uses a non-standard name */
   	width: -moz-max-content;    /* Firefox/Gecko */
@@ -101,10 +101,10 @@ footer{
 }
 
 .footer-tm-logo {
-	height: 19px;
-	width: 112px;
+	height: 36px;
+	width: 55px;
 	float: right;
-	padding: 4px 0 0 0;
+	padding: 1px 0 0 0;
 	margin: 0 0 0 1px;
 }
 
@@ -266,27 +266,27 @@ footer{
 
 .stats-item{
 	height: 230px;
-	background-color: #F8CCCB;
-	border-bottom: 5px Solid #E10;
+	background-color: #232F3E;
+	border-bottom: 5px Solid #FF9900;
 	padding: 20px 0 0 0;
 }
 
 .stats-title{
 	font-size: 30px;
-	color: #686868;
+	color: #7d7d7d;
 }
 
 .stats-val{
 	font-size: 100px;
-	color: #686868;
+	color: #7d7d7d;
 }
 
 a .stats-item:hover .stats-val{
-	color: #E10;
+	color: #FF9900;
 }
 
 a .stats-item:hover .stats-title{
-	color: #000000;
+	color: #FF9900;
 }
 
 /* ADD SCORE */

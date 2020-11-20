@@ -1,15 +1,20 @@
-# **Takeda Tech Maturity 
+# **AWS Well-Architected Scorecard
 
-## What is Takeda Tech maturity?
+## What is the AWS Well-Architected Scorecard?
 This is a highly customized version of the original Tech Maturity [open source project](https://tech.ticketmaster.com/2016/11/08/getting-to-innovation-faster/) by the brilliant folks at TicketMaster.
 
-Tech Maturity helps us identify growth opportunities to eliminate waste, set clearly defined targets, and measure progress all while we work toward the ultimate goal of continuous delivery.
+The AWS Well-Architected Scorecard application helps us by allowing an application owner to easilly self-score their application or solution architecture against all five domains of the AWS [Well Architected Framework](https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc):
 
-The model charts a clear path that can be completed in stages and allows flexibility for progressing through five key dimensions of software development: Code, Build & Test, Release, Operate, and Optimize.
+* Operational Excellence
+* Security
+* Reliability
+* Performance Efficiency
+* Cost Optimization
 
-This application produces a "Cloud Readiness Score" which is a guage to estimate an exising applicaiton or product and it's readiness to be migrated to AWS. The factors evaluated align directly with AWS's [Well Architected Framework](https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc)
 
-One can’t tell if they're winning without a scoreboard, so this app provides a portal to gather, aggregate, and display patterns from the data assembled and made it visible to everyone in the company. Strategically, Tech Maturity provides a key indicator of the Cloud Center of Enablement's performance so that it can continually make value-driven improvements.
+This application produces a "Cloud Readiness Score" which is a guage to estimate an exising applicaiton or product and it's readiness to be migrated to AWS. This score is simply a reference point to determine the overall maturity of the applicaiton or the solution archtiecture from the perspective of the Well-Architected framework.
+
+One can’t tell if they're winning without a scoreboard, so this app provides a portal to gather, aggregate, and display patterns from the data assembled and made it visible to everyone in the company. Strategically, The Well-Arcitected Scorecard provides a key indicator of the Cloud Center of Enablement's (CCoE's) performance so that it can continually make value-driven improvements.
 
 The best thing about this model is that it does not prescribe solutions. Rather, it offers standards with an aim to give teams a clear path towards efficient product development at scale. The model can be easily tailored to meet your specific needs. This model can really be applied ot annything. For example, one can easilly apply this model to products ranging from VAX code to JavaScript libraries. It’s a great vehicle for sharing and rallying around a common vision.
 
