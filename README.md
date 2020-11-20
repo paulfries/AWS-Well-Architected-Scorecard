@@ -1,4 +1,4 @@
-# **AWS Well-Architected Scorecard
+# AWS Well-Architected Scorecard
 
 ## What is the AWS Well-Architected Scorecard?
 This is a highly customized version of the original Tech Maturity [open source project](https://tech.ticketmaster.com/2016/11/08/getting-to-innovation-faster/) by the brilliant folks at TicketMaster.
