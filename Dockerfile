@@ -19,9 +19,10 @@ RUN apk add --no-cache \
     yaml \
     nodejs
 
+COPY dumb-init_1.2.1_amd64 /usr/local/bin/dumb-init
 RUN apk add --no-cache openssl ttf-dejavu && \
-    wget -O /usr/local/bin/dumb-init "https://github.com/Yelp/dumb-init/releases/download/v1.2.1/dumb-init_1.2.1_amd64" && \
-    echo "057ecd4ac1d3c3be31f82fc0848bf77b1326a975b4f8423fe31607205a0fe945  /usr/local/bin/dumb-init" | sha256sum -c && \
+    # wget -O /usr/local/bin/dumb-init "https://github.com/Yelp/dumb-init/releases/download/v1.2.1/dumb-init_1.2.1_amd64" && \
+    # echo "057ecd4ac1d3c3be31f82fc0848bf77b1326a975b4f8423fe31607205a0fe945  /usr/local/bin/dumb-init" | sha256sum -c && \
     chmod +x /usr/local/bin/dumb-init
 
 COPY Gemfile* /tmp/
