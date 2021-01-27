@@ -1,4 +1,7 @@
 #!/bin/sh
+export SECRET_KEY_BASE=`rake secret`
+
+export RAILS_ENV="production";
 
 rake db:create db:migrate db:seed
 
