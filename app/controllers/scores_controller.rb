@@ -1,6 +1,7 @@
 
 # Scores controller permits only creation and view (index and show)
 class ScoresController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :set_product
   before_action :set_score, only: [:show]
 

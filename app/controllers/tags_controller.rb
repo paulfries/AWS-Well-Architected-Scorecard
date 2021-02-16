@@ -1,6 +1,7 @@
 
 # This controller is only for new, create, update and destory
 class TagsController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :set_product
   before_action :set_tag, only: %i[edit update destroy]
 
