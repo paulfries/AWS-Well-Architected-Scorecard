@@ -75,22 +75,22 @@
 	var capability_scores = document.getElementById("capability-score-graph");
 
 	new Chart(total_scores, {
-		type: 'bar', 
+		type: 'bar',
 		scaleOverride : true,
 		scaleStartValue : 0,
 		data: {
 			labels: [
-				<% @scores.each_with_index do |score, index| %> 
+				<% @scores.each_with_index do |score, index| %>
 					<% if @scores.last!=score %> "Archive Score <%= index+1 %>",
 					<% else %> "Current Score"
-					<% end %> 
+					<% end %>
 				<% end %>
 			],
 			datasets: [{
 				label: "Total Tech Maturity Score",
 				data: <%= @scores.map(&:total) %>,
 				backgroundColor: [
-				<% @scores.each_with_index do |score,index| %> 
+				<% @scores.each_with_index do |score,index| %>
 					color[<%= index %>]
 					<% unless @scores.last==score %>,<% end %>
 				<% end %>
@@ -174,8 +174,8 @@
 	                fill: false,
 	                label: 'Current Score',
 					borderWidth: 2,
-	                backgroundColor: color[<%= index %>],
-	                borderColor: color[<%= index %>],
+	                backgroundColor: '#FF9900',
+	                borderColor: '#FF9900',
 	                data: <%= score.get_capability_array %>
 	            },{
 					label: "Organizational Average",
@@ -186,7 +186,14 @@
 					borderColor: '#d0006f',
 					borderWidth: 1,
 					pointRadius: 0
-				}
+				},{
+					type: 'line',
+		            label: 'Baseline Minimum',
+					fill: true,
+					borderWidth: 1,
+					pointRadius: 0,
+		            data: <%= raw get_minscore_value %>
+		        }
 	            <% end %>
 	        <% end %>
         ]
