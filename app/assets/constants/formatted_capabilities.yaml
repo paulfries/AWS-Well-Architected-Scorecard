@@ -1,367 +1,367 @@
 a: "Operational Excellence"
 
-a1: 'Perform Operations as Code' 
-a1_1: '<b>No operations</b> are performed as code (all manual tasks)' 
-a1_2: '<b>Some operations</b> are performed as code, while <b>some</b> operations are manual ' 
-a1_3: '<b>Most operations</b> are performed as code, <b>few</b> manual operations are required ' 
-a1_4: '<b>All operations</b> are performed using code (CloudFormation, Elastic Beanstalk, Ansible, etc)' 
+a1: 'Perform Operations as Code'
+a1_1: '<b>No operations</b> are performed as code (all manual tasks)'
+a1_2: '<b>Some operations</b> are performed as code, while <b>some</b> operations are manual '
+a1_3: '<b>Most operations</b> are performed as code, <b>few</b> manual operations are required '
+a1_4: '<b>All operations</b> are performed using code (CloudFormation, Elastic Beanstalk, Ansible, etc)'
 a1_min: 2
 
-a2: 'Code Management Strategy' 
-a2_1: 'Code is in SCM (e.g. git) and used for release, but there is <b>little to no documented or agreed strategy</b> of how to branch, merge, or release code' 
-a2_2: 'Develop on <b>version branches</b>. Every deployment can be tracked back to understand all changes which went into it by anyone in the team' 
-a2_3: 'Develop on <b>feature branches</b> that are short-lived (i.e. less than two weeks) and <b>release from merged master</b>' 
-a2_4: "<b>Develop and release from master</b> with at least <b>daily code check-ins</b> using a process allowing traceability to the requested feature " 
+a2: 'Code Management Strategy'
+a2_1: 'Code is in SCM (e.g. git) and used for release, but there is <b>little to no documented or agreed strategy</b> of how to branch, merge, or release code'
+a2_2: 'Develop on <b>version branches</b>. Every deployment can be tracked back to understand all changes which went into it by anyone in the team'
+a2_3: 'Develop on <b>feature branches</b> that are short-lived (i.e. less than two weeks) and <b>release from merged master</b>'
+a2_4: "<b>Develop and release from master</b> with at least <b>daily code check-ins</b> using a process allowing traceability to the requested feature "
 a2_min: 1
 
-a3: 'DevOps Practice' 
-a3_1: 'Environments in production are not controlled by contributors building the product' 
-a3_2: 'Environments in <b>staging</b> are <b>controlled and partially managed</b> by the contributors building the product and receive issues escalations for that environment' 
-a3_3: 'Environments in <b>production</b> are <b>owned</b> by the contributors building the product, but <b>controlled by someone else</b>' 
-a3_4: '<b>DevOps model is followed</b> - environments in production are fully controlled and owned by the contributors building the product, including alerts and issue escalations' 
+a3: 'DevOps Practice'
+a3_1: 'Environments in production are not controlled by contributors building the product'
+a3_2: 'Environments in <b>staging</b> are <b>controlled and partially managed</b> by the contributors building the product and receive issues escalations for that environment'
+a3_3: 'Environments in <b>production</b> are <b>owned</b> by the contributors building the product, but <b>controlled by someone else</b>'
+a3_4: '<b>DevOps model is followed</b> - environments in production are fully controlled and owned by the contributors building the product, including alerts and issue escalations'
 a3_min: 2
 
-a4: 'Logging and Telemetry' 
-a4_1: '<b>Default</b> or customized logging and <b>no telemetry</b>' 
-a4_2: '<b>Rudimentary</b> logging and telemetry in place. A minimum set of data is collected to understand the applicaiton state' 
-a4_3: "<b>Adherence to established logging and telemetry standards.</b> Suitable information available in logs and telemetry for <b>troubleshooting common issues</b>" 
-a4_4: "Adherence to established logging and telemetry standards <b>Most</b> issues can be diagnosed through logs and telemetry" 
+a4: 'Logging and Telemetry'
+a4_1: '<b>Default</b> or customized logging and <b>no telemetry</b>'
+a4_2: '<b>Rudimentary</b> logging and telemetry in place. A minimum set of data is collected to understand the application state'
+a4_3: "<b>Adherence to established logging and telemetry standards.</b> Suitable information available in logs and telemetry for <b>troubleshooting common issues</b>"
+a4_4: "Adherence to established logging and telemetry standards <b>Most</b> issues can be diagnosed through logs and telemetry"
 a4_min: 2
 
-a5: 'Backward / Forward Compatibility' 
-a5_1: '<b>Breaking changes</b> (i.e. tested locally)' 
-a5_2: 'Changes are <b>regressed by users</b> of the product prior to release' 
-a5_3: 'Coding practices supports <b>forward</b> compatibility' 
-a5_4: 'Coding practices support <b>backward and forward</b> compatibility' 
+a5: 'Backward / Forward Compatibility'
+a5_1: '<b>Breaking changes</b> (i.e. tested locally)'
+a5_2: 'Changes are <b>regressed by users</b> of the product prior to release'
+a5_3: 'Coding practices supports <b>forward</b> compatibility'
+a5_4: 'Coding practices support <b>backward and forward</b> compatibility'
 a5_min: 2
 
-a6: 'Monitoring and Alerting' 
-a6_1: 'Logs have enough data to set up monitoring and alerts on' 
-a6_2: '<b>Some monitoring</b> and <b>some alerting</b> is prioritized in the work queue' 
-a6_3: "<b>Prioritization</b> of monitoring and alerting as part of the <b>acceptance criteria for all work.</b> Access to <b>log archives</b> and telemetry is available for troubleshooting" 
-a6_4: "Prioritization of monitoring, alerting, and <b>validation of triggers (e.g. SLAs)</b> as part of the acceptance criteria for all work Logs are <b>indexed</b> and telemetry is <b>readily</b> available for troubleshooting" 
+a6: 'Monitoring and Alerting'
+a6_1: 'Logs have enough data to set up monitoring and alerts on'
+a6_2: '<b>Some monitoring</b> and <b>some alerting</b> is prioritized in the work queue'
+a6_3: "<b>Prioritization</b> of monitoring and alerting as part of the <b>acceptance criteria for all work.</b> Access to <b>log archives</b> and telemetry is available for troubleshooting"
+a6_4: "Prioritization of monitoring, alerting, and <b>validation of triggers (e.g. SLAs)</b> as part of the acceptance criteria for all work Logs are <b>indexed</b> and telemetry is <b>readily</b> available for troubleshooting"
 a6_min: 2
 
-a7: 'Quality Engineering Model' 
-a7_1: 'Contributors have separate roles (i.e. only code or test)' 
-a7_2: '<b>Some</b> contributors can both <b>code and test</b>' 
-a7_3: '<b>Most</b> contributors both code and test' 
-a7_4: '<b>All</b> contributors both code and test' 
+a7: 'Quality Engineering Model'
+a7_1: 'Contributors have separate roles (i.e. only code or test)'
+a7_2: '<b>Some</b> contributors can both <b>code and test</b>'
+a7_3: '<b>Most</b> contributors both code and test'
+a7_4: '<b>All</b> contributors both code and test'
 a7_min: ~
 
-a8: 'Code Reuse' 
-a8_1: 'Contributors usually code what they need' 
-a8_2: 'Contributors can highlight where they have <b>reused open source</b> or code from other projects' 
-a8_3: 'Contributors <b>aim to reuse</b> vs rebuild while coding and <b>actively evangelize</b> to maximize code reuse by others' 
-a8_4: 'Contributors seek to reuse vs rebuild as part of the <b>planning process</b>, actively evangelize to maximize code reuse by others, and <b>actively contributes to other code</b>' 
+a8: 'Code Reuse'
+a8_1: 'Contributors usually code what they need'
+a8_2: 'Contributors can highlight where they have <b>reused open source</b> or code from other projects'
+a8_3: 'Contributors <b>aim to reuse</b> vs rebuild while coding and <b>actively evangelize</b> to maximize code reuse by others'
+a8_4: 'Contributors seek to reuse vs rebuild as part of the <b>planning process</b>, actively evangelize to maximize code reuse by others, and <b>actively contributes to other code</b>'
 a8_min: ~
 
-a9: 'Incremental Updates' 
-a9_1: 'Contributors do not use prototyping to estimate or validate any features' 
-a9_2: 'Contributors <b>sometimes</b> use prototyping to <b>estimate</b> larger features more confidently' 
-a9_3: 'Contributors <b>often</b> use prototyping to <b>validate</b> features with users before completion' 
-a9_4: 'Contributors <b>always</b> use prototyping to validate features with users before completion' 
+a9: 'Incremental Updates'
+a9_1: 'Contributors do not use prototyping to estimate or validate any features'
+a9_2: 'Contributors <b>sometimes</b> use prototyping to <b>estimate</b> larger features more confidently'
+a9_3: 'Contributors <b>often</b> use prototyping to <b>validate</b> features with users before completion'
+a9_4: 'Contributors <b>always</b> use prototyping to validate features with users before completion'
 a9_min: ~
 
-a10: 'Operational Readiness' 
-a10_1: 'The Application is approprately managed on-premesis, but <b>no feasible plan</b> exists for managing it once migrated to the cloud' 
-a10_2: 'Application owners understand the need for a cloud operating model to support the application, but have some degree of skill or resource gap. A <b>plan is in place</b> to address any such concern' 
-a10_3: 'The application owner has developed a workable clod operating model for the application and has <b>most</b> of the resources necessary to support it' 
-a10_4: 'The applicaiton owner has developed a workable cloud operating model for the applicaiton and has <b>all</b> of the resources necessary to support it' 
+a10: 'Operational Readiness'
+a10_1: 'The Application is appropriately managed on-premises, but <b>no feasible plan</b> exists for managing it once migrated to the cloud'
+a10_2: 'Application owners understand the need for a cloud operating model to support the application, but have some degree of skill or resource gap. A <b>plan is in place</b> to address any such concern'
+a10_3: 'The application owner has developed a workable clod operating model for the application and has <b>most</b> of the resources necessary to support it'
+a10_4: 'The application owner has developed a workable cloud operating model for the application and has <b>all</b> of the resources necessary to support it'
 a10_min: 2
 
-a11: 'Behavior Driven Development (BDD)' 
-a11_1: 'Contributors do not have an understanding of BDD methodology' 
-a11_2: 'Contributors understand BDD methodology, and practice it on <b>some</b> features' 
-a11_3: 'Contributors understand BDD methodology, and practice it on <b>most</b> features' 
-a11_4: 'BDD methodology is <b>how things get done</b>' 
+a11: 'Behavior Driven Development (BDD)'
+a11_1: 'Contributors do not have an understanding of BDD methodology'
+a11_2: 'Contributors understand BDD methodology, and practice it on <b>some</b> features'
+a11_3: 'Contributors understand BDD methodology, and practice it on <b>most</b> features'
+a11_4: 'BDD methodology is <b>how things get done</b>'
 a11_min: ~
 
-a12: 'Infrasructure Baseline' 
-a12_1: 'Infrastrucutre makes use of <b>non-standard components</b> (OS, Databse, or other) - <b>Exception Requred</b>' 
-a12_2: 'Standard (approved) compnents are used in the solution architecture' 
-a12_3: 'The solution architecture replaces <b>some</b> aspects of the infrastructure with <b>managed cloud solutions</b>' 
-a12_4: 'Solution architecture is <b>serverless</b> and makes use of contempoary <b>managed services throughout</b>' 
+a12: 'Infrastructure Baseline'
+a12_1: 'Infrastructure makes use of <b>non-standard components</b> (OS, Database, or other) - <b>Exception Required</b>'
+a12_2: 'Standard (approved) components are used in the solution architecture'
+a12_3: 'The solution architecture replaces <b>some</b> aspects of the infrastructure with <b>managed cloud solutions</b>'
+a12_4: 'Solution architecture is <b>serverless</b> and makes use of contemporary <b>managed services throughout</b>'
 a12_min: 2
 
-a13: 'Continuous Integration' 
-a13_1: "No automated build pipeline. Code is <b>manually compiled</b> and may not always compile successfully" 
-a13_2: "Build pipeline contains <b>manual steps</b> but the build is never left in a failed state. Some failures may be missed" 
-a13_3: 'Build pipeline <b>requires automated tests</b> to pass before feature is considered "complete"' 
-a13_4: 'Build pipeline requires automated tests to pass and <b>failures are actively monitored and a process for handling failures is in place</b>' 
+a13: 'Continuous Integration'
+a13_1: "No automated build pipeline. Code is <b>manually compiled</b> and may not always compile successfully"
+a13_2: "Build pipeline contains <b>manual steps</b> but the build is never left in a failed state. Some failures may be missed"
+a13_3: 'Build pipeline <b>requires automated tests</b> to pass before feature is considered "complete"'
+a13_4: 'Build pipeline requires automated tests to pass and <b>failures are actively monitored and a process for handling failures is in place</b>'
 a13_min: 3
 
-a14: 'Build Pipeline Traceability' 
-a14_1: 'Code can be built correctly - manually or via a build pipeline. Vulnerabilities are automatically detected by the source control solution' 
-a14_2: 'There is a build pipeline with a <b>visual representation</b> and contributors are <b>automatically alerted</b> when a build fails' 
-a14_3: 'Build is <b>triggered</b> by source control check-in or is scheduled, with alerts being sent out on failures' 
-a14_4: 'Build is triggered by source control check-in or a <b>build of its dependent services</b>, with alerts being sent out on failures, and if successful the build is <b>pushed across environments to production</b>' 
+a14: 'Build Pipeline Traceability'
+a14_1: 'Code can be built correctly - manually or via a build pipeline. Vulnerabilities are automatically detected by the source control solution'
+a14_2: 'There is a build pipeline with a <b>visual representation</b> and contributors are <b>automatically alerted</b> when a build fails'
+a14_3: 'Build is <b>triggered</b> by source control check-in or is scheduled, with alerts being sent out on failures'
+a14_4: 'Build is triggered by source control check-in or a <b>build of its dependent services</b>, with alerts being sent out on failures, and if successful the build is <b>pushed across environments to production</b>'
 a14_min: 1
 
-a15: 'Modular Releases' 
-a15_1: 'Entire product is a single deployable unit' 
-a15_2: '<b>Some</b> of the product is separated into different deployable units' 
-a15_3: '<b>Most</b> of the product is separated into many deployable units' 
-a15_4: 'Pieces of product/service is <b>independently deployable</b> and the lifecycle of change for different parts of the product is well understood and taken into account for the <b>deployment architecture</b>' 
+a15: 'Modular Releases'
+a15_1: 'Entire product is a single deployable unit'
+a15_2: '<b>Some</b> of the product is separated into different deployable units'
+a15_3: '<b>Most</b> of the product is separated into many deployable units'
+a15_4: 'Pieces of product/service is <b>independently deployable</b> and the lifecycle of change for different parts of the product is well understood and taken into account for the <b>deployment architecture</b>'
 a15_min: ~
 
-a16: 'Continuous Delivery' 
-a16_1: 'Manual deployment and testing are performed in staging' 
-a16_2: 'Manual deployment, and <b>automatic testing</b> are performed in staging' 
-a16_3: '<b>Automated deployment and tests</b> are performed in staging' 
-a16_4: 'Automated deployment and tests are performed in <b>production</b> when code is checked in as "zero touch" continuous deployments' 
+a16: 'Continuous Delivery'
+a16_1: 'Manual deployment and testing are performed in staging'
+a16_2: 'Manual deployment, and <b>automatic testing</b> are performed in staging'
+a16_3: '<b>Automated deployment and tests</b> are performed in staging'
+a16_4: 'Automated deployment and tests are performed in <b>production</b> when code is checked in as "zero touch" continuous deployments'
 a16_min: 2
 
-a17: 'Deployment Methodology' 
-a17_1: 'Able to automatically or manually deploy a new release to a <b>single server/cluster before rolling to the next</b> (rolling update)' 
-a17_2: 'Able to <b>manually</b> determine the impact of a partial (canary) deployment' 
-a17_3: 'Able to <b>automatically</b> determine the impact of a partial (canary) deployment' 
-a17_4: '<b>Zero downtime, fully automated</b> blue-green or red-black deployments spin up and validate a canary instance in production with the ability to segment a group or percentage of traffic, switch traffic over, and shut down the previous version once successful' 
+a17: 'Deployment Methodology'
+a17_1: 'Able to automatically or manually deploy a new release to a <b>single server/cluster before rolling to the next</b> (rolling update)'
+a17_2: 'Able to <b>manually</b> determine the impact of a partial (canary) deployment'
+a17_3: 'Able to <b>automatically</b> determine the impact of a partial (canary) deployment'
+a17_4: '<b>Zero downtime, fully automated</b> blue-green or red-black deployments spin up and validate a canary instance in production with the ability to segment a group or percentage of traffic, switch traffic over, and shut down the previous version once successful'
 a17_min: ~
 
-a18: 'Dependency Management (Code)' 
-a18_1: 'Dependencies are uncertain' 
-a18_2: '<b>Manual</b> dependency management' 
-a18_3: '<b>Automatic</b> dependency management' 
-a18_4: 'Contributors follow a defined strategy to <b>regularly update dependencies to newer versions</b>' 
+a18: 'Dependency Management (Code)'
+a18_1: 'Dependencies are uncertain'
+a18_2: '<b>Manual</b> dependency management'
+a18_3: '<b>Automatic</b> dependency management'
+a18_4: 'Contributors follow a defined strategy to <b>regularly update dependencies to newer versions</b>'
 a18_min: ~
 
-a19: 'Push Button Releases' 
-a19_1: 'Releases require more than one contributor to deploy' 
-a19_2: 'Releases require <b>manual intervention</b>' 
-a19_3: 'Code can be deployed via a <b>push button release</b>, but not the environment' 
-a19_4: '<b>Production-like environments</b> can be prepared through version controlled scripts and run via <b>push button deployments</b>' 
+a19: 'Push Button Releases'
+a19_1: 'Releases require more than one contributor to deploy'
+a19_2: 'Releases require <b>manual intervention</b>'
+a19_3: 'Code can be deployed via a <b>push button release</b>, but not the environment'
+a19_4: '<b>Production-like environments</b> can be prepared through version controlled scripts and run via <b>push button deployments</b>'
 a19_min: ~
 
-a20: 'Scriptable DB Releases' 
-a20_1: 'Database specialist makes schema / migrations on behalf of the contributors' 
-a20_2: 'Contributors create <b>scripts</b> to perform schema changes and migrations, but database specialist executes them' 
-a20_3: 'DB schema changes and migrations are made directly from version control as a <b>manual set during release</b>' 
-a20_4: 'DB schema changes and migrations are made directly from version control and <b>consistent across all environments, including production</b>' 
+a20: 'Scriptable DB Releases'
+a20_1: 'Database specialist makes schema / migrations on behalf of the contributors'
+a20_2: 'Contributors create <b>scripts</b> to perform schema changes and migrations, but database specialist executes them'
+a20_3: 'DB schema changes and migrations are made directly from version control as a <b>manual set during release</b>'
+a20_4: 'DB schema changes and migrations are made directly from version control and <b>consistent across all environments, including production</b>'
 a20_min: ~
 
 b: "Security"
 
-b1: 'Implement a Strong Identity foundation' 
-b1_1: 'Application and/or supporting infrastructure <b>lacks appropriate identity or access control mechanisms</b> ' 
-b1_2: 'Applicaiton and/or supporting infrastructure manages identity <b>independently of organizational standards</b>' 
-b1_3: 'Application and supporting infrastructure use an <b>approved</b> identity and access management standard <b>some separation of duties</b> is defined and enforced' 
-b1_4: 'Application and supporting infrastructure use an <b>approved</b> identity and access management standard, and <b>comprehensive separation of duties</b> is defined and enforced' 
+b1: 'Implement a Strong Identity foundation'
+b1_1: 'Application and/or supporting infrastructure <b>lacks appropriate identity or access control mechanisms</b> '
+b1_2: 'Application and/or supporting infrastructure manages identity <b>independently of organizational standards</b>'
+b1_3: 'Application and supporting infrastructure use an <b>approved</b> identity and access management standard <b>some separation of duties</b> is defined and enforced'
+b1_4: 'Application and supporting infrastructure use an <b>approved</b> identity and access management standard, and <b>comprehensive separation of duties</b> is defined and enforced'
 b1_min: 3
 
-b2: 'Protect data in transit and at rest' 
-b2_1: '<b>No</b> data encryption is used' 
-b2_2: 'Data <b>in transit</b> is encrypted' 
-b2_3: 'Both <b>data in transit and at rest</b> is encrypted' 
-b2_4: 'Both data in transit and at rest is encrypted and <b>encryption keys are centrally managed</b> by the organization' 
+b2: 'Protect data in transit and at rest'
+b2_1: '<b>No</b> data encryption is used'
+b2_2: 'Data <b>in transit</b> is encrypted'
+b2_3: 'Both <b>data in transit and at rest</b> is encrypted'
+b2_4: 'Both data in transit and at rest is encrypted and <b>encryption keys are centrally managed</b> by the organization'
 b2_min: 3
 
-b3: 'Security Analysis' 
-b3_1: 'Code/application has <b>never</b> been scanned with a web application security scanner ' 
-b3_2: 'Code/applicaiton has an <b>approved security suite</b> deployed and is <b>regularly</b> scanned for anomalies ' 
-b3_3: 'Code/application is <b>automatically scanned</b> with an approved security suite, <b>anomalies are reported</b>' 
-b3_4: 'Code/application is <b>automatically scanned</b> with an approved security suite, anomolies prioritized into active SecOps workload using the proper <b>incident management process</b>' 
+b3: 'Security Analysis'
+b3_1: 'Code/application has <b>never</b> been scanned with a web application security scanner '
+b3_2: 'Code/application has an <b>approved security suite</b> deployed and is <b>regularly</b> scanned for anomalies '
+b3_3: 'Code/application is <b>automatically scanned</b> with an approved security suite, <b>anomalies are reported</b>'
+b3_4: 'Code/application is <b>automatically scanned</b> with an approved security suite, anomalies prioritized into active SecOps workload using the proper <b>incident management process</b>'
 b3_min: 2
 
-b4: 'Automated Security Compliance' 
-b4_1: 'Security compliance is <b>manually</b> maintained and audited' 
-b4_2: '<b>Some</b> security compliance standards are <b>automated</b>' 
-b4_3: '<b>Most</b> security compliance standards are <b>automated</b> and <b>anomalies are reported</b> to the security team through a <b>defined process</b>' 
-b4_4: '<b>All</b> security compliance standards are <b>automated</b> and <b>anomalies are reported</b> to the security team through a <b>defined process</b>' 
+b4: 'Automated Security Compliance'
+b4_1: 'Security compliance is <b>manually</b> maintained and audited'
+b4_2: '<b>Some</b> security compliance standards are <b>automated</b>'
+b4_3: '<b>Most</b> security compliance standards are <b>automated</b> and <b>anomalies are reported</b> to the security team through a <b>defined process</b>'
+b4_4: '<b>All</b> security compliance standards are <b>automated</b> and <b>anomalies are reported</b> to the security team through a <b>defined process</b>'
 b4_min: 2
 
-b5: 'Security Event Detection' 
-b5_1: "Some local logging. Events are <b>manually observed</b> and may not always be detected" 
-b5_2: "An approved <b>security tool suite</b> is installed and collects standard logs for analysis." 
-b5_3: '<b>Application/Environment specific</b> security event logging is enabled throughout the application architecture. Logs are transmitted to a <b>central security log repository</b> for anlysis' 
-b5_4: '<b>Application/Environment specific</b> security event logging is enabled throughout the application architecture. Logs are transmitted to a <b>central security log repository</b> for analyss. <b>Anomalies are automatically detected</b> and <b>trigger</b> an approprate incident management process' 
+b5: 'Security Event Detection'
+b5_1: "Some local logging. Events are <b>manually observed</b> and may not always be detected"
+b5_2: "An approved <b>security tool suite</b> is installed and collects standard logs for analysis."
+b5_3: '<b>Application/Environment specific</b> security event logging is enabled throughout the application architecture. Logs are transmitted to a <b>central security log repository</b> for analysis'
+b5_4: '<b>Application/Environment specific</b> security event logging is enabled throughout the application architecture. Logs are transmitted to a <b>central security log repository</b> for analysis. <b>Anomalies are automatically detected</b> and <b>trigger</b> an approprate incident management process'
 b5_min: 3
 
-b6: 'Change Management Strategy' 
-b6_1: 'Contributors do not follow a documented or consistent deployment or change management strategy' 
-b6_2: 'Contributors follow a <b>defined</b> deployment and change management process' 
-b6_3: 'Contributors follow a defined deployment strategy that includes <b>automated</b> rollbacks, regression tests, configs, and tracking' 
-b6_4: 'Contributors follow a defined deployment strategy that is <b>fully automated</b> and includes regression tests, configs, tracking, and <b>database releases</b>' 
+b6: 'Change Management Strategy'
+b6_1: 'Contributors do not follow a documented or consistent deployment or change management strategy'
+b6_2: 'Contributors follow a <b>defined</b> deployment and change management process'
+b6_3: 'Contributors follow a defined deployment strategy that includes <b>automated</b> rollbacks, regression tests, configs, and tracking'
+b6_4: 'Contributors follow a defined deployment strategy that is <b>fully automated</b> and includes regression tests, configs, tracking, and <b>database releases</b>'
 b6_min: 2
 
-b7: 'Configuration File Management' 
-b7_1: 'Manual configurations' 
-b7_2: 'Each environment has predefined configurations' 
-b7_3: 'Sensitive data has been <b>abstracted</b>, and configurations are <b>human readable</b>' 
-b7_4: "Sensitive data has been abstracted, and configurations are human readable All configurations are <b>automated</b> with tools that support <b>monitoring and alerting</b> with minimal environment-specific data" 
+b7: 'Configuration File Management'
+b7_1: 'Manual configurations'
+b7_2: 'Each environment has predefined configurations'
+b7_3: 'Sensitive data has been <b>abstracted</b>, and configurations are <b>human readable</b>'
+b7_4: "Sensitive data has been abstracted, and configurations are human readable All configurations are <b>automated</b> with tools that support <b>monitoring and alerting</b> with minimal environment-specific data"
 b7_min: 3
 
-b8: 'Network Security Controls' 
-b8_1: '<b>Some</b> network port and protocol requirements are documented. Standard network security controls are in place' 
-b8_2: 'Application data flow is <b>fully documented</b>. Some standard network security/access controls are in place' 
-b8_3: 'Application data flow is <b>fully documented</b>. <b>Micro-Segmentation</b> is used to isolate <b>all components</b> of the application against <b>abnormal traffic patterns</b>' 
-b8_4: 'An effective <b>defense-in-depth</b> strategy is leveraged to protect <b>all components</b> of the application from abnormal traffic. <b>Deep packet inspection</b> is used to identify and <b>automatically drop</b> malformed requests' 
+b8: 'Network Security Controls'
+b8_1: '<b>Some</b> network port and protocol requirements are documented. Standard network security controls are in place'
+b8_2: 'Application data flow is <b>fully documented</b>. Some standard network security/access controls are in place'
+b8_3: 'Application data flow is <b>fully documented</b>. <b>Micro-Segmentation</b> is used to isolate <b>all components</b> of the application against <b>abnormal traffic patterns</b>'
+b8_4: 'An effective <b>defense-in-depth</b> strategy is leveraged to protect <b>all components</b> of the application from abnormal traffic. <b>Deep packet inspection</b> is used to identify and <b>automatically drop</b> malformed requests'
 b8_min: 2
 
 
 c: "Reliability"
 
-c1: 'Performance Testing and Capacity Planning' 
-c1_1: 'The operational capacity of the production software is not clearly understood' 
-c1_2: "Performance is <b>manually tested</b> during the release process using load scripts of common scenarios. Contributors understand the algorithmic complexity of the software" 
-c1_3: "Performance is <b>automatically tracked</b> in a <b>staging</b> environment to gauge changes in application performance. Contributors <b>understand the optimal load</b> that each instance can handle, and there is a <b>process in place</b> to make release decisions based on acceptance of new SLAs. Capacity provisioning and scaling up and down <b>requires manual steps</b>" 
-c1_4: "Performance is automatically tracked in both <b>staging and production</b> with a full understanding of the application performance characteristics. Contributors <b>actively collaborate</b> with the business to <b>determine acceptance of new SLAs based on actual production traffic and predications</b> created by load testing. Capacity provisioning and scaling up and down is <b>fully automated</b>" 
+c1: 'Performance Testing and Capacity Planning'
+c1_1: 'The operational capacity of the production software is not clearly understood'
+c1_2: "Performance is <b>manually tested</b> during the release process using load scripts of common scenarios. Contributors understand the algorithmic complexity of the software"
+c1_3: "Performance is <b>automatically tracked</b> in a <b>staging</b> environment to gauge changes in application performance. Contributors <b>understand the optimal load</b> that each instance can handle, and there is a <b>process in place</b> to make release decisions based on acceptance of new SLAs. Capacity provisioning and scaling up and down <b>requires manual steps</b>"
+c1_4: "Performance is automatically tracked in both <b>staging and production</b> with a full understanding of the application performance characteristics. Contributors <b>actively collaborate</b> with the business to <b>determine acceptance of new SLAs based on actual production traffic and predications</b> created by load testing. Capacity provisioning and scaling up and down is <b>fully automated</b>"
 c1_min: 2
 
-c2: 'Release Frequency' 
-c2_1: 'Releases take longer than a cycle (iteration / sprint)' 
-c2_2: '<b>1 release</b> every cycle (sprint / iteration)' 
-c2_3: '<b>Multiple releases</b> every cycle (sprint / iteration)' 
-c2_4: 'Code is released to production on <b>every successful build</b>' 
+c2: 'Release Frequency'
+c2_1: 'Releases take longer than a cycle (iteration / sprint)'
+c2_2: '<b>1 release</b> every cycle (sprint / iteration)'
+c2_3: '<b>Multiple releases</b> every cycle (sprint / iteration)'
+c2_4: 'Code is released to production on <b>every successful build</b>'
 c2_min: ~
 
-c3: 'Application Scalability' 
-c3_1: '<b>No consideration</b> has been made for application performance scaling' 
-c3_2: 'Application can be <b>manually scaled</b> (vertical scaling)' 
-c3_3: '<b>Some</b> components of the application can be scaled horizontally' 
-c3_4: 'Application can scale <b>in and out automatically</b> based on demand' 
+c3: 'Application Scalability'
+c3_1: '<b>No consideration</b> has been made for application performance scaling'
+c3_2: 'Application can be <b>manually scaled</b> (vertical scaling)'
+c3_3: '<b>Some</b> components of the application can be scaled horizontally'
+c3_4: 'Application can scale <b>in and out automatically</b> based on demand'
 c3_min: 2
 
-c4: 'Service Consumer Tests' 
-c4_1: 'No or some tests simulating a consuming application or service' 
-c4_2: '<b>Manual</b> tests are executed to simulate a consuming application or service' 
-c4_3: '<b>Automated</b> tests of main use cases from a consuming application or service are <b>integrated</b> into the build pipeline' 
-c4_4: '<b>Automated</b> tests from a consuming application or service are <b>triggered</b> by the build pipeline, and <b>cause the build to fail</b> if there are errors' 
+c4: 'Service Consumer Tests'
+c4_1: 'No or some tests simulating a consuming application or service'
+c4_2: '<b>Manual</b> tests are executed to simulate a consuming application or service'
+c4_3: '<b>Automated</b> tests of main use cases from a consuming application or service are <b>integrated</b> into the build pipeline'
+c4_4: '<b>Automated</b> tests from a consuming application or service are <b>triggered</b> by the build pipeline, and <b>cause the build to fail</b> if there are errors'
 c4_min: 2
 
-c5: 'Build for Availability' 
-c5_1: 'Product is not tested for extreme failures (e.g. a node/instance becoming unavailable)' 
-c5_2: 'Product is <b>manually tested</b> for extreme failures and automatically tested for error use cases. Single points of failure are documented' 
-c5_3: 'Automated resilience testing is performed on the product in a <b>staging environment</b> without failures' 
-c5_4: 'Automated resilience testing is performed on the product in a <b>staging and production environment</b> without failures and all errors (e.g. code, web server, OS, etc...) are caught and escalated' 
+c5: 'Build for Availability'
+c5_1: 'Product is not tested for extreme failures (e.g. a node/instance becoming unavailable)'
+c5_2: 'Product is <b>manually tested</b> for extreme failures and automatically tested for error use cases. Single points of failure are documented'
+c5_3: 'Automated resilience testing is performed on the product in a <b>staging environment</b> without failures'
+c5_4: 'Automated resilience testing is performed on the product in a <b>staging and production environment</b> without failures and all errors (e.g. code, web server, OS, etc...) are caught and escalated'
 c5_min: 2
 
-c6: 'Architecture Design' 
-c6_1: 'Architecture is a traditonal <b>"monolithic"</b> application architecture' 
-c6_2: 'Architecture makes use of <b>some</b> managed services (e.g. DynamoDB) to improve scalability, performance, and availability ' 
-c6_3: 'Architecture is a <b>Services Oriented Architecture (SOA)</b> making software components reusable via service interfaces' 
-c6_4: 'Architecture is <b>serverless and/or microservices-based</b>' 
+c6: 'Architecture Design'
+c6_1: 'Architecture is a traditional <b>"monolithic"</b> application architecture'
+c6_2: 'Architecture makes use of <b>some</b> managed services (e.g. DynamoDB) to improve scalability, performance, and availability '
+c6_3: 'Architecture is a <b>Services Oriented Architecture (SOA)</b> making software components reusable via service interfaces'
+c6_4: 'Architecture is <b>serverless and/or microservices-based</b>'
 c6_min: 2
 
-c7: 'Demand Management' 
-c7_1: 'Workload is <b>not readilly scalable</b> due to a change in demand' 
-c7_2: 'Workload can be <b>manually scaled</b> to account for changes in demand' 
-c7_3: '<b>Most components</b> of the workload are <b>dynammically scalable</b>, and <b>react automatically</b> to changes in demand' 
-c7_4: 'Workload is <b>highly scalalble</b> and <b>all compnoents</b> of the application adjust to changes in demand <b>automatically</b>' 
+c7: 'Demand Management'
+c7_1: 'Workload is <b>not readily scalable</b> due to a change in demand'
+c7_2: 'Workload can be <b>manually scaled</b> to account for changes in demand'
+c7_3: '<b>Most components</b> of the workload are <b>dynamically scalable</b>, and <b>react automatically</b> to changes in demand'
+c7_4: 'Workload is <b>highly scalable</b> and <b>all components</b> of the application adjust to changes in demand <b>automatically</b>'
 c7_min: 2
 
-c8: 'Dependency Management (Business Services)' 
-c8_1: 'External/internal dependencies on this workload are uncertian' 
-c8_2: '<b>Some</b> applicaiton dependancies are known, but <b>not</b> formally documented' 
-c8_3: '<b>All leads and feeds</b> to this applicaiton/service are <b>well documented</b>' 
-c8_4: 'All leads and feeds to this applicaiton/service are well documented. <b>Regular automated discovery is performed</b> to identify changes in the dependancy map' 
+c8: 'Dependency Management (Business Services)'
+c8_1: 'External/internal dependencies on this workload are uncertain'
+c8_2: '<b>Some</b> application dependencies are known, but <b>not</b> formally documented'
+c8_3: '<b>All leads and feeds</b> to this application/service are <b>well documented</b>'
+c8_4: 'All leads and feeds to this application/service are well documented. <b>Regular automated discovery is performed</b> to identify changes in the dependency map'
 c8_min: ~
 
-c9: 'Workload Monitoring' 
-c9_1: '<b>Basic infrastructure metrics</b> are collected (CPU, Memory, Network, Disk Space, etc)' 
-c9_2: 'In addition to infrastructure metrics, <b>application availaiblity</b> is <b>externally verified</b> via a <b>regular synthetic test</b>' 
-c9_3: '<b>Applicaiton performance monitoring</b> (e.g. Amazon X-Ray) is built into the applicaiton. <b>Anomalies trigger a notification or incident management process</b>' 
-c9_4: '<b>Extensive</b> infrastructure and applicaiton monitoring is deployed. Anomalies <b>automatically resolve</b>, and/or trigger an incident management process' 
+c9: 'Workload Monitoring'
+c9_1: '<b>Basic infrastructure metrics</b> are collected (CPU, Memory, Network, Disk Space, etc)'
+c9_2: 'In addition to infrastructure metrics, <b>application availability</b> is <b>externally verified</b> via a <b>regular synthetic test</b>'
+c9_3: '<b>Application performance monitoring</b> (e.g. Amazon X-Ray) is built into the application. <b>Anomalies trigger a notification or incident management process</b>'
+c9_4: '<b>Extensive</b> infrastructure and application monitoring is deployed. Anomalies <b>automatically resolve</b>, and/or trigger an incident management process'
 c9_min: 2
 
-c10: 'Failure Management' 
-c10_1: '<b>Basic</b> backup operations are performed at regular intervals' 
-c10_2: 'RTO, RPO is defined. Backup/restore operations are <b>presumed to be sufficient</b>' 
-c10_3: 'RTO, RPO is well defined. A <b>disaster recovery plan</b> accounts for all aspects of the applicaiton' 
-c10_4: 'RTO, RPO is well defined. A <b>disaster recovery plan</b> accounts for all aspects of the applicaiton and is <b>regulary tested</b>' 
+c10: 'Failure Management'
+c10_1: '<b>Basic</b> backup operations are performed at regular intervals'
+c10_2: 'RTO, RPO is defined. Backup/restore operations are <b>presumed to be sufficient</b>'
+c10_3: 'RTO, RPO is well defined. A <b>disaster recovery plan</b> accounts for all aspects of the application'
+c10_4: 'RTO, RPO is well defined. A <b>disaster recovery plan</b> accounts for all aspects of the application and is <b>regularly tested</b>'
 c10_min: 2
 
 d: "Performance Efficiency"
 
-d1: 'Evoloving Workload' 
-d1_1: '<b>No formal mechanism exists</b> to regularly review the solution architecture for performance improvements based on new technologies or capabilities as they become available' 
-d1_2: 'The solution archtecture is reviewed on an <b>informal, as-needed basis</b> for potential technology evolution' 
-d1_3: 'The solution architecture is <b>regularly reviewed</b>. New potential performance enahancing <b>technologies are identified</b>' 
-d1_4: 'A <b>formal process exists</b> to regularly identify new potential performance enahancing technologies and, if applicabble, <b>implementation steps are added to the DevOps team backlog</b>' 
+d1: 'Evolving Workload'
+d1_1: '<b>No formal mechanism exists</b> to regularly review the solution architecture for performance improvements based on new technologies or capabilities as they become available'
+d1_2: 'The solution architecture is reviewed on an <b>informal, as-needed basis</b> for potential technology evolution'
+d1_3: 'The solution architecture is <b>regularly reviewed</b>. New potential performance enhancing <b>technologies are identified</b>'
+d1_4: 'A <b>formal process exists</b> to regularly identify new potential performance enhancing technologies and, if applicable, <b>implementation steps are added to the DevOps team backlog</b>'
 d1_min: 2
 
-d2: 'Runbook Adoption' 
-d2_1: 'No triage runbook has been created' 
-d2_2: 'Contributors have created a triage runbook, but is it <b>not actively used</b>' 
-d2_3: 'Contributors have created a triage runbook, and it is <b>integrated into the alerting infrastructure</b> for easy reference' 
-d2_4: 'Contributors have created a <b>useful</b> triage runbook that is <b>actively maintained</b> and integrated into the alerting infrastructure for easy reference' 
+d2: 'Runbook Adoption'
+d2_1: 'No triage runbook has been created'
+d2_2: 'Contributors have created a triage runbook, but is it <b>not actively used</b>'
+d2_3: 'Contributors have created a triage runbook, and it is <b>integrated into the alerting infrastructure</b> for easy reference'
+d2_4: 'Contributors have created a <b>useful</b> triage runbook that is <b>actively maintained</b> and integrated into the alerting infrastructure for easy reference'
 d2_min: ~
 
-d3: 'Monitoring and Alerting' 
-d3_1: 'SLAs haven''t been defined or if SLAs are monitored and alerts are set up, they mostly just encompass the standard cases' 
-d3_2: 'SLAs are monitored and <b>some alerts</b> are sent when thresholds are not met, healthchecks are monitored, and alerts are configured for <b>many standard error conditions</b>' 
-d3_3: "<b>SLAs in staging and production are consistently being met and alerted on</b> when thresholds are not met, and <b>healthchecks are monitored</b>. Alerts are configured for a <b>majority of error conditions</b>" 
-d3_4: "SLAs in staging and production are consistently being met, and a <b>business disruption alert</b> is escalated via a defined incident management process when thresholds are not met or a healthcheck fails. <b>Non-standard HTTP responses</b> trigger an alert. Alerts are triggered for main use cases when <b>expected results are not met</b> (i.e. lower than normal conversion rate)" 
+d3: 'Monitoring and Alerting'
+d3_1: 'SLAs haven''t been defined or if SLAs are monitored and alerts are set up, they mostly just encompass the standard cases'
+d3_2: 'SLAs are monitored and <b>some alerts</b> are sent when thresholds are not met, healthchecks are monitored, and alerts are configured for <b>many standard error conditions</b>'
+d3_3: "<b>SLAs in staging and production are consistently being met and alerted on</b> when thresholds are not met, and <b>healthchecks are monitored</b>. Alerts are configured for a <b>majority of error conditions</b>"
+d3_4: "SLAs in staging and production are consistently being met, and a <b>business disruption alert</b> is escalated via a defined incident management process when thresholds are not met or a healthcheck fails. <b>Non-standard HTTP responses</b> trigger an alert. Alerts are triggered for main use cases when <b>expected results are not met</b> (i.e. lower than normal conversion rate)"
 d3_min: 2
 
-d4: 'Democratize advanced technologies' 
-d4_1: 'The team has <b>little visability</b> towards improvements in techology domains that may affect this architecture' 
-d4_2: 'Advanced, new, or contempoary soluctions are <b>identified</b>, but difficult for the team to implement. As a result, innovation <b>rarely occurs</b>' 
-d4_3: 'The team <b>tests and validated new technologies</b> as they become available, but they are rarely implemented due to internal policy or process constraints' 
-d4_4: 'New technologies are <b>regularly identified, tested, and implemented</b> such that they improve application performance' 
+d4: 'Democratize advanced technologies'
+d4_1: 'The team has <b>little visibility</b> towards improvements in technology domains that may affect this architecture'
+d4_2: 'Advanced, new, or contemporary solutions are <b>identified</b>, but difficult for the team to implement. As a result, innovation <b>rarely occurs</b>'
+d4_3: 'The team <b>tests and validated new technologies</b> as they become available, but they are rarely implemented due to internal policy or process constraints'
+d4_4: 'New technologies are <b>regularly identified, tested, and implemented</b> such that they improve application performance'
 d4_min: 1
 
-d5: 'Risk Management' 
-d5_1: 'Contributors do not fully own risk management or mitigation of the product. Disaster recovery is normally defined and/or managed by someone else who has full ownership' 
-d5_2: 'Contributors think about disaster recovery plans while the code is built and released, but <b>requires the involvement from many other parties</b>' 
-d5_3: 'There is an <b>established disaster recovery plan</b> (DRP) and <b>business continuity program</b> (BCP)' 
-d5_4: 'There is an established disaster recovery plan (DRP) and business continuity program (BCP) which has been <b>tested within the past 6 months</b>' 
+d5: 'Risk Management'
+d5_1: 'Contributors do not fully own risk management or mitigation of the product. Disaster recovery is normally defined and/or managed by someone else who has full ownership'
+d5_2: 'Contributors think about disaster recovery plans while the code is built and released, but <b>requires the involvement from many other parties</b>'
+d5_3: 'There is an <b>established disaster recovery plan</b> (DRP) and <b>business continuity program</b> (BCP)'
+d5_4: 'There is an established disaster recovery plan (DRP) and business continuity program (BCP) which has been <b>tested within the past 6 months</b>'
 d5_min: 2
 
-d6: 'Synthetic Monitoring' 
-d6_1: 'No synthetic monitoring is in place' 
-d6_2: 'Synthetic monitoring is used in staging and production with <b>some alerting</b>' 
-d6_3: 'Synthetic monitoring is used in staging and production for <b>major use cases</b>, with escalation <b>alerts for failures</b>' 
-d6_4: 'Synthetic monitoring is used in staging and production for <b>both positive and negative use cases</b>, with escalation alerts for failures' 
+d6: 'Synthetic Monitoring'
+d6_1: 'No synthetic monitoring is in place'
+d6_2: 'Synthetic monitoring is used in staging and production with <b>some alerting</b>'
+d6_3: 'Synthetic monitoring is used in staging and production for <b>major use cases</b>, with escalation <b>alerts for failures</b>'
+d6_4: 'Synthetic monitoring is used in staging and production for <b>both positive and negative use cases</b>, with escalation alerts for failures'
 d6_min: 2
 
-d7: 'Log Management Strategy' 
-d7_1: 'All logs, all the time!' 
-d7_2: 'Log rotation is based off a <b>default template</b>' 
-d7_3: "Log rotation takes into account <b>available disk space</b>. Logs are <b>archived for retention</b>" 
-d7_4: "There is an <b>effectively defined log rotation strategy</b> including timing of business activities like periods of high demand Logs are retained according to <b>business and legal requirements</b>" 
+d7: 'Log Management Strategy'
+d7_1: 'All logs, all the time!'
+d7_2: 'Log rotation is based off a <b>default template</b>'
+d7_3: "Log rotation takes into account <b>available disk space</b>. Logs are <b>archived for retention</b>"
+d7_4: "There is an <b>effectively defined log rotation strategy</b> including timing of business activities like periods of high demand Logs are retained according to <b>business and legal requirements</b>"
 d7_min: 2
 
-d8: 'Business Dashboard' 
-d8_1: 'Some business metrics are tracked in a dashboard, and / or some metrics are still mined manually, but these may not be visible or accessible to all contributors' 
-d8_2: "Business metrics are tracked in a dashboard that <b>illustrates product performance,</b> and is constantly <b>referenced by others</b> to quantify how the product performs. <b>All contributors</b> have access and regular consistent visibility of the dashboard" 
-d8_3: "Business metrics are tracked in a dashboard that illustrates product performance, is constantly referenced by others to quantify how the product performs, and used to <b>measure the success of new feature rollouts.</b> The dashboard is <b>clearly visible at all times</b> to all contributors" 
-d8_4: "Business metrics are tracked in a dashboard that illustrates product performance, is constantly referenced by others to quantify how the product performs, and used to measure the success of new feature rollouts Main use cases <b>trigger alerts to stakeholders</b> when business metrics do not match expected values (e.g. lower than expected conversion rates)" 
+d8: 'Business Dashboard'
+d8_1: 'Some business metrics are tracked in a dashboard, and / or some metrics are still mined manually, but these may not be visible or accessible to all contributors'
+d8_2: "Business metrics are tracked in a dashboard that <b>illustrates product performance,</b> and is constantly <b>referenced by others</b> to quantify how the product performs. <b>All contributors</b> have access and regular consistent visibility of the dashboard"
+d8_3: "Business metrics are tracked in a dashboard that illustrates product performance, is constantly referenced by others to quantify how the product performs, and used to <b>measure the success of new feature rollouts.</b> The dashboard is <b>clearly visible at all times</b> to all contributors"
+d8_4: "Business metrics are tracked in a dashboard that illustrates product performance, is constantly referenced by others to quantify how the product performs, and used to measure the success of new feature rollouts Main use cases <b>trigger alerts to stakeholders</b> when business metrics do not match expected values (e.g. lower than expected conversion rates)"
 d8_min: ~
 
 e: "Cost Optimization"
 
-e1: 'Continuous Process Improvement' 
-e1_1: 'Few processes are defined and contributors rely on tribal knowledge to succeed' 
-e1_2: '<b>Processes are documented</b> and can be repeated by any contributor' 
-e1_3: 'Contributors <b>simplify / automate</b> processes whenever possible and documentation is <b>maintained</b> as they evolve' 
-e1_4: 'Contributors are <b>actively focused</b> on continuous process improvement by identifying and enhancing processes; performance is predictable, and <b>quality is consistently high</b>' 
+e1: 'Continuous Process Improvement'
+e1_1: 'Few processes are defined and contributors rely on tribal knowledge to succeed'
+e1_2: '<b>Processes are documented</b> and can be repeated by any contributor'
+e1_3: 'Contributors <b>simplify / automate</b> processes whenever possible and documentation is <b>maintained</b> as they evolve'
+e1_4: 'Contributors are <b>actively focused</b> on continuous process improvement by identifying and enhancing processes; performance is predictable, and <b>quality is consistently high</b>'
 e1_min: ~
 
-e2: 'Tech Debt Management' 
-e2_1: 'Contributors do not track debt in any consistent way' 
-e2_2: 'Contributors can track debt via a <b>defined process</b>' 
-e2_3: 'Contributors avoid taking on any <b>new debt</b> by actively tracking and managing it' 
-e2_4: 'Contributors <b>actively prioritize and reduce all debt</b>' 
+e2: 'Tech Debt Management'
+e2_1: 'Contributors do not track debt in any consistent way'
+e2_2: 'Contributors can track debt via a <b>defined process</b>'
+e2_3: 'Contributors avoid taking on any <b>new debt</b> by actively tracking and managing it'
+e2_4: 'Contributors <b>actively prioritize and reduce all debt</b>'
 e2_min: ~
 
-e3: 'Cost-Effective Resources' 
-e3_1: 'The application is deployed in the cloud as it might be deployed <b>on-premesis</b>' 
-e3_2: 'Contributors <b>sometimes</b> identify <b>simple opportunites</b> for cost improvement (e.g. Reserved Instances)' 
-e3_3: 'Contributors sometimes identify some <b>advanced opportunities</b> for cost improvment (e.g. Spot Instances, auto-scalaing, managed services)' 
-e3_4: 'Contributors follow a <b>defined and accepted process</b> for identifying cost improvment oppotunities. The application is <b>regularly adjusted</b> to make use of these opportunities' 
+e3: 'Cost-Effective Resources'
+e3_1: 'The application is deployed in the cloud as it might be deployed <b>on-premises</b>'
+e3_2: 'Contributors <b>sometimes</b> identify <b>simple opportunities</b> for cost improvement (e.g. Reserved Instances)'
+e3_3: 'Contributors sometimes identify some <b>advanced opportunities</b> for cost improvement (e.g. Spot Instances, auto-scaling, managed services)'
+e3_4: 'Contributors follow a <b>defined and accepted process</b> for identifying cost improvement opportunities. The application is <b>regularly adjusted</b> to make use of these opportunities'
 e3_min: 2
 
-e4: 'Data-Driven Metrics' 
-e4_1: 'It takes a lot of time to gather cost metrics. Metrics are rarely used to adjust cost or utilization' 
-e4_2: 'Metrics can be <b>pulled after consumption</b> to determine the effective run-rate. Simple to implement changes are persued' 
-e4_3: 'Metrics illustrate the product health and consumption, and an ideal action is <b>eventually</b> taken based on the metrics to reduce cost' 
-e4_4: 'Metrics illustrate the product health and consumption, <b>predictive rules</b> create alerts, and action (e.g. product decisions) is taken based on the metrics' 
+e4: 'Data-Driven Metrics'
+e4_1: 'It takes a lot of time to gather cost metrics. Metrics are rarely used to adjust cost or utilization'
+e4_2: 'Metrics can be <b>pulled after consumption</b> to determine the effective run-rate. Simple to implement changes are pursued'
+e4_3: 'Metrics illustrate the product health and consumption, and an ideal action is <b>eventually</b> taken based on the metrics to reduce cost'
+e4_4: 'Metrics illustrate the product health and consumption, <b>predictive rules</b> create alerts, and action (e.g. product decisions) is taken based on the metrics'
 e4_min: 2
 
-e5: 'Cost of Services' 
-e5_1: 'Services are selected because they are similar to what the orgainzation is <b>already familliar with</b>' 
-e5_2: '<b>Some consideration</b> for managed services is made (Example: using AWS RDS over a standalone SQL Server)' 
-e5_3: '<b>Detailed analysis of all applicable services</b> (and their effect on cost) is made before deploying to AWS. Only the services that are <b>currenlty supported</b> by our team are implemented even if they might not be the most cost-effective' 
-e5_4: 'Application architecutre has been altered to make use of contempoary managed services wherever possible (e.g. Lambda, DynamoDB, ECS/EKS, Fargate, API Gateway, etc.) <b>All components</b> of the application runs in the most cost-effective <b>on-demand</b> manner' 
+e5: 'Cost of Services'
+e5_1: 'Services are selected because they are similar to what the organization is <b>already familiar with</b>'
+e5_2: '<b>Some consideration</b> for managed services is made (Example: using AWS RDS over a standalone SQL Server)'
+e5_3: '<b>Detailed analysis of all applicable services</b> (and their effect on cost) is made before deploying to AWS. Only the services that are <b>currently supported</b> by our team are implemented even if they might not be the most cost-effective'
+e5_4: 'Application architecture has been altered to make use of contemporary managed services wherever possible (e.g. Lambda, DynamoDB, ECS/EKS, Fargate, API Gateway, etc.) <b>All components</b> of the application runs in the most cost-effective <b>on-demand</b> manner'
 e5_min: 2
