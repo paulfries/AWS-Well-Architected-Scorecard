@@ -718,11 +718,11 @@ a .stats-item:hover .stats-title{
 	width: 80%;
 	float: left;
 	padding-bottom: 100px;
-	background-image: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.9)),url('rocket-black.png');
+	/* background-image: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.9)),url('rocket-black.png');
 	background-size: 670px 650px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: fixed; */
 }
 
 .about-right-pane ul>li {
